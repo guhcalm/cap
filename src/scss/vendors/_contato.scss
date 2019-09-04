@@ -1,0 +1,107 @@
+.box-ct{
+	background: #f1f1f1;
+	height: 1250px;
+	width: 100%;
+	position: relative;
+}
+.contatos{
+	width: 100%;
+	height: 250px;
+	position: absolute;
+}
+.read-ct-h1{
+	text-align: center;
+	color: rgba(34, 34, 19, .8);
+	font: bold 20px $font_main;
+}
+.read-ct-h2{
+	text-align: center;
+	color: rgba(34, 34, 19, .8);
+	font: bold 13px $font_main;
+}
+.contato-form{
+	
+	background-image: url('../img/background/faq.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	top: 250px;
+}
+.map-cap{
+	height: 400px;
+	width: 100%;
+	position: absolute;
+	top: 750px;
+}
+
+.wrapper{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 0 20px;
+}
+.contact-form{
+	max-width: 1000px;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.0);
+	padding: 30px;
+	border-radius: 5px;
+	display: flex;
+}
+.input-fields{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%;
+}
+.input-fields, 
+.msg{
+	width: 48%
+}
+.input-fields .input,
+.msg textarea{
+	margin: 10px 0;
+	background: transparent;
+	border: 0px;
+	border-bottom: 2px solid #f1f1f1;
+	padding: 10px;
+	color: #f1f1f1;
+	width: 100%;
+}
+.msg textarea{
+	height: 212px;
+}
+::-webkit-input-placeholder{
+	color: #f1f1f1;
+}
+::-moz-input-placeholder{
+	color: #f1f1f1;
+}
+::-ms-input-placeholder{
+	color: #f1f1f1;
+}
+.btn{
+	background: rgba(241, 241, 241, .7);
+	text-align: center;
+	padding: 15px;
+	width: 100%;
+	border-radius: 0px;
+	color: #222213;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+@media screen and (max-width: 600px){
+	.contact-form{
+		flex-drection: column;
+	}
+	.msg textarea{
+		height: 80px;
+	}
+	.input-fields{
+	width: 100%;
+	}
+}
