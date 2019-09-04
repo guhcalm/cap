@@ -19,7 +19,7 @@
 	@include make-xs-column-offset(3);
 	@include make-md-column(2);
 	@include make-md-column-offset(5);
-	background-color: #D8D8D8;
+	background-color: rgba(255, 255, 0, .6);
 	color: #f1f1f1; font: bold 12px $font_main;
 	z-index: 1;
 	a{

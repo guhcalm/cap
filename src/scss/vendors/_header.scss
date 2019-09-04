@@ -74,8 +74,10 @@
 	right: 0px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-	@include make-md-column(4);
-	@include make-md-column-offset(7);
+	@include make-sm-column(7);
+	@include make-sm-column-offset(5);
+	@include make-md-column(5);
+	@include make-md-column-offset(6);
 	boder-radius: 0;
 	box-shadow: none;
 	border: none;
