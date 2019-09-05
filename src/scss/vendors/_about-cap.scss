@@ -1,0 +1,198 @@
+.read-about{
+	font: bold 13px $font_main;
+	@include make-md-column(10);
+	@include make-md-column-offset(1);	
+	margin: auto auto auto auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 1;
+	padding: 40px;
+	padding-left: 80px; 
+	padding-right: 80px; 
+	text-align: justify;
+	vertical-align: middle;
+	color: #222213;
+	
+}
+#history-cap{
+	z-index: 1;
+	height: 350px;
+	background-color: #f1f1f1;
+	@include make-md-column(12);
+	box-shadow: 0px 0px 10px 0px;
+
+}
+#we{
+
+	height: 450px;
+	background-image: url('../img/slider/4.fw.png');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	@include make-md-column(12);
+	box-shadow: 0px 0px 2px 0px;
+
+}
+.read-about-we{
+	border-style: solid;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-color: #f1f1f1;
+	@include make-md-column(10);
+	@include make-md-column-offset(1);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
+	right: 15px;
+	opacity: 1;
+	padding: 50px;
+	padding-left: 0px; 
+	padding-right: 0px; 
+	text-align: justify;
+	vertical-align: middle;
+	font: bold 25px $font_main;
+	color: #f1f1f1;
+	
+}
+.read-about-people{
+	font: bold 20px $font_main;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: #222213;
+	
+}
+#history-cap-people{
+	z-index: 1;
+	height: 1000px;
+	background-color: #f1f1f1;
+	@include make-md-column(12);
+	box-shadow: 10px 0px 0px 0px;
+}
+.membro-col{
+	cursor: pointer;
+	font: bold 13px $font_main;
+	color: #222213;
+}
+
+/*horizontal grids*/
+.membro-h{
+	height: 500px;
+	@include make-md-column(4);
+	.membro-h1{
+		position: relative;
+		width: 100%;
+		height: 250px;
+
+		.membro-face-h1{
+			position: absolute;
+			background-image: url('../img/slider/4.fw.png'); 
+			background-repeat: no-repeat; 
+			background-size: cover;
+			background-position: center;
+			background-attachment: scroll;
+			height: 250px;
+			width: 50%;
+		}
+		.membro-info-h1{
+			right: 0%;
+			position: absolute;
+			height: 250px;
+			width: 50%;
+			padding: 150px 5px 5px 5px;
+			text-align: justify;
+			vertical-align: middle;
+			
+		}
+	}
+	.membro-h1:hover{
+		transition: 500ms;
+		background-color: #000000;
+		color: #f1f1f1;
+	}
+
+	.membro-h2{
+		position: relative;
+		width: 100%;
+		height: 250px;
+
+		.membro-face-h2{
+			position: absolute;
+			right: 0%;
+			background-image: url('../img/slider/4.fw.png'); 
+			background-repeat: no-repeat; 
+			background-size: cover;
+			background-position: center;
+			background-attachment: scroll;
+			height: 250px;
+			width: 50%;
+		}
+		.membro-info-h2{
+			position: absolute;
+			height: 250px;
+			width: 50%;
+			padding: 150px 5px 5px 5px;
+			text-align: justify;
+			vertical-align: middle;
+		}
+
+	}
+	.membro-h2:hover{
+			transition: 700ms;
+			background-color: #000000;
+			color: #f1f1f1;
+		}
+
+
+
+
+}
+/*horizontal grids*/
+
+/*vertical grids*/
+
+.membro-v1{
+	position: relative;	
+	@include make-md-column(2);
+	height: 500px;
+}
+.membro-face-v1{
+	background-image: url('../img/slider/4.fw.png'); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	height: 250px;
+	@include make-md-column(12);
+}
+.membro-info-v1{
+	height: 250px;
+	@include make-md-column(12);
+	padding: 150px 5px 5px 5px;
+	text-align: justify;
+	vertical-align: middle;	
+}
+.membro-v1:hover{
+	transition: 700ms;
+	height: 500px;
+	background-color: #000000;
+	color: #f1f1f1;
+}
+p{
+font: 12px $font_main;	
+}
+h2{
+font: bold 12px $font_main;
+}
+h1{
+font: 15px $font_main;
+}
+/*vertical grids*/
