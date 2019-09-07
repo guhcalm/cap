@@ -61,7 +61,9 @@ h2{
 	text-align: center;
 	color: #222213;	
 }
-
+.col{
+	background-color: #f1f1f1;
+}
 /*horizontal grids*/
 .membro-h{
 	height: 500px;
@@ -84,6 +86,7 @@ h2{
 	background-position: center;
 	background-attachment: scroll;
 	cursor: pointer;
+	opacity: .9;
 }
 .membro-info-h1, .membro-info-h2, .membro-info-v1{
 	padding: 130px 15px 5px 15px;

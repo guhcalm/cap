@@ -89,19 +89,14 @@ p, h2{
 		top: 0px;
 	}
 
+	.membro-h{
+		height: 200px;
+	}
+	.membro-face-h1, .membro-info-h1, .membro-face-h2, .membro-info-h2, .membro-face-v1, .membro-info-v1{
+		height: 100px;
+	}
 
-.membro-h{
-	height: 400px;
-}
-
-.membro-face-h1, .membro-info-h1, .membro-face-h2, .membro-info-h2, .membro-face-v1, .membro-info-v1{
-	height: 200px;
-}
-
-
-/*vertical grids*/
-
-.membro-v1{
-	height: 400px;
-}
+	.membro-v1{
+		height: 200px;
+	}
 }
