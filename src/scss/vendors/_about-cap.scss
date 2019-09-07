@@ -44,6 +44,10 @@ h2{
 #we{
 	height: 450px;
 	background-image: url('../img/slider/4.fw.png');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	@include make-md-column(12);
 }
 
@@ -74,7 +78,7 @@ h2{
 	width: 50%;
 	height: 250px;
 }
-.membro-face-h1, .membro-face-h2, .membro-face-v1, #we{
+.membro-face-h1, .membro-face-h2, .membro-face-v1{
 	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position: center;
