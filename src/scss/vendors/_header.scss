@@ -54,17 +54,17 @@
 }
 
 .cap{
-	height: 35.71px;
-	width: 60px;
+	height: 32.35px;
+	width: 55px;
 	position: absolute;
-	top: 40px;
+	top: 45px;
 	padding: 0px 0px 0px 0px;
 	background-image: url('../img/icones/logo.fw.png');
 	background-size: 100% 100%;
 	background-position: center;
 	@include make-xs-column-offset(4.7);
-	@include make-sm-column-offset(1);
-	@include make-md-column-offset(1);
+	@include make-sm-column-offset(1.4);
+	@include make-md-column-offset(1.4);
 }
 .navbar, .navbar-default{
 	z-index: 10;
