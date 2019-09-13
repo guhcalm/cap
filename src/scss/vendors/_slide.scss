@@ -64,6 +64,7 @@ p, h2{
 #job .card{
 	position: relative;
 	box-sizing: border-box;
+	width: 33.33%;
 }
 #job .card .face{	
 	height: 350px;
@@ -71,7 +72,7 @@ p, h2{
 
 }
 #job .card .face.face1{
-@include make-md-column(12);
+
 	position: relative;
 	display: flex;
 	justify-content: center;
