@@ -72,7 +72,7 @@ p, h2{
 
 }
 #job .card .face.face1{
-
+	overflow: hidden;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -213,5 +213,8 @@ p, h2{
 
 	.membro-v1{
 		height: 200px;
+	}
+	#job{
+	margin: 15px 0 0 0;
 	}
 }
