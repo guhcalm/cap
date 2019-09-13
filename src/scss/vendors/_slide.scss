@@ -1,6 +1,6 @@
 .accordion {
 	max-width: 100%;
-	height: 600px;
+	height: 500px;
 	margin: 15px auto auto auto;
 	display: flex;
 	flex-direction: row;
@@ -56,6 +56,8 @@ p, h2{
 
 
 #job{
+	padding: 0 5px 0 5px;
+	margin: 10px 0 40px 0;
 	position: relative;
 	display: flex;
 	justifly-content: space-between;
@@ -65,11 +67,12 @@ p, h2{
 	position: relative;
 	box-sizing: border-box;
 	width: 33.33%;
+	box-shadow: 0px 0 0px 0;
 }
 #job .card .face{	
 	height: 350px;
 	transition: .5s;
-
+	margin: 0 5px 0 5px;
 }
 #job .card .face.face1{
 	overflow: hidden;
@@ -215,6 +218,6 @@ p, h2{
 		height: 200px;
 	}
 	#job{
-	margin: 15px 0 0 0;
+	margin: 15px 0 15px 0;
 	}
 }
