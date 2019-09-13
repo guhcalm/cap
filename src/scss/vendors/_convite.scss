@@ -11,6 +11,7 @@
 	color: #BDBDAD; font: 12px $font_main;
 }
 .contact-us{
+	border: 1px solid rgba(138,138,123, .7);
 	display: block;
 	position: relative;
 	transition: 0.7s;
@@ -20,14 +21,15 @@
 	@include make-xs-column-offset(3);
 	@include make-md-column(2);
 	@include make-md-column-offset(5);
-	background-color: rgba(138,138,123, .7);
-	color: #222213; font: bold 12px $font_main;
+	color: rgba(138,138,123, .7); font: bold 12px $font_main;
 	z-index: 1;
 }
 .contact-us:hover{
-	transition: 3s;
-	color: rgba(206, 206, 191, 0.7);
+	transition: 1.5s;
+	color: rgba(138,138,123, 1);
+	border: 1px solid rgba(0, 0, 0, 0.9);
 }
+
 .contact-us::after{
 	content: "";
 	position: absolute;
