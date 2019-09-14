@@ -1,7 +1,14 @@
-#instagram{
-	> #instagram__itens{
-		> .instagram_item{
-		
-		}
-	}
+
+.carousel{
+	height: 700px;
+	Width: 100%;
+	position: relative;
+	top: -50px;
+}
+.carousel-item{
+	height: 400px;
+	width: 300px;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center;
 }

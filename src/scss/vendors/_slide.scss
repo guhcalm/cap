@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: row;
 	cursor: pointer; 
-	margin-botton: 100px
+	margin-botton: 100px;
 }
 
 .box {
@@ -57,7 +57,7 @@ p, h2{
 
 #job{
 	padding: 0 5px 0 5px;
-	margin: 10px 0 40px 0;
+	margin: 10px auto 40px auto;
 	position: relative;
 	display: flex;
 	justifly-content: space-between;
@@ -86,7 +86,7 @@ p, h2{
 	transform: translateY(0);
 }
 #job .card .face.face1 .content{
-	opacity: .7;
+	opacity: 1;
 	transition: 0.5s;
 }
 #job .card:hover .face.face1 .content{
@@ -97,7 +97,6 @@ p, h2{
 }
 
 #job .card .face.face2{
-	@include make-md-column(12);
 	position: relative;
 	background: #f1f1f1;
 	display: flex;
@@ -111,6 +110,7 @@ p, h2{
 	opacity: 0;
 }
 #job .card:hover .face.face2{
+	height:350px;
 	transition: .8s;
 	opacity: .9;
 
@@ -220,4 +220,9 @@ p, h2{
 	#job{
 	margin: 15px 0 15px 0;
 	}
+}
+#instagram h2{
+	color: #000;
+	text-align: justify;
+	font-size: 15;
 }
