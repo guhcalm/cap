@@ -1,6 +1,6 @@
 .accordion {
 	max-width: 100%;
-	height: 500px;
+	height: 550px;
 	margin: 15px auto auto auto;
 	display: flex;
 	flex-direction: row;
@@ -10,7 +10,7 @@
 
 .box {
 	position: relative;
-	height: 450px;
+	height: 500px;
 	flex: 1;
 	background-position: left;
 	background-size: cover;
@@ -19,7 +19,7 @@
 }
 .box:hover {
 	flex: 7;
-	height: 500px;
+	height: 550px;
 }
 .a1 {
 	background-image: url('../img/slider/1.fw.png')
@@ -209,6 +209,7 @@ p, h2{
 	.box:hover {
 		flex: 7;
 		height: 500px;
+		transition: .5s;
 	}
 	.cap {
 		top: 35px;
