@@ -188,8 +188,8 @@ p, h2{
 	height: 450px;
 	}
 	.box {
-			box-shadow: none;
-			height: 350px;
+		box-shadow: none;
+		height: 350px;
 	}
 	.box:hover {
 		flex: 7;
@@ -200,31 +200,8 @@ p, h2{
 		height: 41.67px;
 		width:70px;
 	}
-	#sv{
-	
-	}
-	.read-sv{
-		right: 0px;
-		left: 0px;
-		top: 300px;
-	}
-	.img-sv{
-		right: 0px;
-		left: 0px;
-		top: 0px;
-	}
-
-	.membro-h{
-		height: 200px;
-	}
-	.membro-face-h1, .membro-info-h1, .membro-face-h2, .membro-info-h2, .membro-face-v1, .membro-info-v1{
-		height: 100px;
-	}
-
-	.membro-v1{
-		height: 200px;
-	}
 	#job{
 	margin: 15px 0 15px 0;
 	}
+	
 }
