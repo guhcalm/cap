@@ -80,6 +80,15 @@ body{
 	box-shadow: none;
 	border: none;
 	background-color: transparent;
+	
+	.navbar-header .navbar-toggle span.icon-bar{
+		background-color: #686859;
+	}
+
+
+
+
+
 	.navbar-collapse{
 		background-color: rgba(34, 34, 19, 0.4);
 		border: none;
