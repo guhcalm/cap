@@ -80,9 +80,13 @@ body{
 	box-shadow: none;
 	border: none;
 	background-color: transparent;
+
+	.navbar-header .navbar-toggle{
+		border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;
+	}
 	
 	.navbar-header .navbar-toggle span.icon-bar{
-		background-color: #686859;
+		background-color: rgba(104, 104, 89, 0.4);
 	}
 
 
