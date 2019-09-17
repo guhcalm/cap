@@ -119,6 +119,10 @@ h3{
 	background-color: #292929;
 	color: #CECEBF;
 }
+.membro-h1:hover .membro-face-h1, .membro-h2:hover .membro-face-h2, .membro-v1:hover .membro-face-v1{
+	opacity: .5;
+	transition: .9s;
+}
 /*end.hover*/
 
 
