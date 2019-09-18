@@ -65,7 +65,9 @@ body{
 	@include make-sm-column-offset(1.4);
 	@include make-md-column-offset(1.4);
 }
+
 .navbar, .navbar-default{
+	
 	z-index: 10;
 	position: absolute;
 	top: 55px;
@@ -218,7 +220,7 @@ body{
 
 #flow{
 	background-color: #f1f1f1;
-	height: 60px;
+	height: 55px;
 }
 #flow .content{
 	display: flex;
@@ -236,7 +238,7 @@ body{
 	color: #222213;
 }
 #flow .content .cap-flow{
-	height: 60px;
+	height: 55px;
 	width: 55px;
 	background-image: url('../img/icones/cap.png');
 	background-size: 100% 100%;

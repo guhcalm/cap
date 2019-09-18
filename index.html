@@ -266,6 +266,16 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="src/js/vendors/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript">
+       $(window).on("scroll", function(){
+          if($(window).scrollTop()){
+            $('nav').addClass('black');
+          }
+          else{
+            $('nav').removeClass('black');
+          }
+       })
+    </script>
     <script src="src/js/vendors/bootstrap/popper.min.js"></script>
     <script src="src/js/vendors/bootstrap/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
