@@ -64,6 +64,7 @@ body{
 	background-position: center;
 	@include make-sm-column-offset(1);
 	@include make-md-column-offset(1);
+	opacity: .8	;
 }
 
 .navbar, .navbar-default{
@@ -77,7 +78,7 @@ body{
 	@include make-sm-column(7);
 	@include make-sm-column-offset(5.625);
 	@include make-md-column(5);
-	@include make-md-column-offset(7.3);
+	@include make-md-column-offset(7.45);
 	boder-radius: 0;
 	box-shadow: none;
 	border: none;
@@ -109,7 +110,7 @@ body{
 				&.active {
 					a{
 						background-color: #222213;
-						color: rgba(189,189,173, .8);
+						color: rgba(189,189,173, .9);
 						font: 10px $font_main;
 					}
 				}
