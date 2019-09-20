@@ -75,9 +75,9 @@ body{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	@include make-sm-column(7);
-	@include make-sm-column-offset(5);
+	@include make-sm-column-offset(5.625);
 	@include make-md-column(5);
-	@include make-md-column-offset(7);
+	@include make-md-column-offset(7.3);
 	boder-radius: 0;
 	box-shadow: none;
 	border: none;
@@ -115,7 +115,7 @@ body{
 				}
 				a{
 					transition: 0.5s;
-					color: #BDBDAD;
+					color: rgba(189,189,173, .8);
 					font: bold 10px $font_main;
 					&:hover{
 						background: #f1f1f1;
