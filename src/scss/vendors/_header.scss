@@ -109,16 +109,16 @@ body{
 				&.active {
 					a{
 						background-color: #222213;
-						color: #BDBDAD;
+						color: rgba(189,189,173, .8);
 						font: 10px $font_main;
 					}
 				}
 				a{
 					transition: 0.5s;
-					color: rgba(189,189,173, .8);
+					color: rgba(189,189,173, .7);
 					font: bold 10px $font_main;
 					&:hover{
-						background: #f1f1f1;
+						background: rgba(233,233,228, .8);
 						color: #222213;
 						
 					}
