@@ -8,7 +8,7 @@ $telefone = addcslashes($_POST['telefone'])
 $assunto = addcslashes($_POST['assunto'])
 $mensagem = addcslashes($_POST['message'])
 
-$to = "guhcalm@outlook.com";
+$to = "cap.ejif@gmail.com";
 $subject = "Contato - cap-site"
 $body = "Nome: ".$nome. "\r\n".
 		"Email: ".$email."\r\n".
