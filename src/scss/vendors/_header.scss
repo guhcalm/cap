@@ -57,21 +57,21 @@ body{
 	height: 34.35px;
 	width: 55px;
 	position: absolute;
-	top: 45px;
+	top: 43px;
 	padding: 0px 0px 0px 0px;
 	background-image: url('../img/icones/logo.fw.png');
 	background-size: 100% 100%;
 	background-position: center;
 	@include make-sm-column-offset(1);
-	@include make-md-column-offset(1);
-	opacity: .8;
+	@include make-md-column-offset(1.2);
+	opacity: .7;
 }
 
 .navbar, .navbar-default{
 	
 	z-index: 10;
 	position: absolute;
-	top: 55px;
+	top: 60px;
 	right: 0px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
@@ -115,11 +115,11 @@ body{
 					}
 				}
 				a{
-					transition: 0.5s;
+					transition: 0.3s;
 					color: rgba(189,189,173, .7);
-					font: bold 10px $font_main;
+					font: bold 9px $font_main;
 					&:hover{
-						background: rgba(233,233,228, .8);
+						background: #fff;
 						color: #222213;
 						
 					}
