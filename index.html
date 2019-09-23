@@ -17,6 +17,12 @@
     <link rel="shortcut icon" href="src/img/icones/favicon.png"/>
   </head>
   <body>
+        <div class="loading-box">
+      <div class="roller-p">
+          <div class="handle-p">
+          </div>
+      </div>
+    </div>
     <div class="container-fluid">
 <!--header-->
 <div class="container-fluid" id="face">
@@ -285,6 +291,15 @@
         dist: -5
       });
     });
+    </script>
+    <script>
+//<![CDATA[
+$(window).on('load', function () {
+    $('.loading-box .roller-p').fadeOut();
+    $('.loading-box').delay(350).fadeOut('slow'); 
+    $('body').delay(350).css({'overflow': 'visible'});
+})
+//]]>
     </script>
   </body>
 </html>
