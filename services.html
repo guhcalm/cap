@@ -15,7 +15,18 @@
     <meta content="guhcalm" name="author">
     <link rel="shortcut icon" href="src/img/icones/favicon.png"/>
   </head>
-  <body>
+<body onload="loading()">
+<!--loading-->
+  <div id="load">
+    <div class="loading-box">
+      <div class="roller-p">
+        <div class="handle-p">
+        </div>
+      </div>
+      <div class="paint"></div>
+    </div>
+  </div>
+<!--end.loading-->
 <!--header-->
 <div class="container-fluid" id="face">
   <div class="container">
@@ -86,68 +97,72 @@
 </div>
 </div>
 
-<!--banner><!banner-->
+<!--banner-->
 <div id="banner">
   <div class="container">
     <div class="content">
-          <div class="read-bnnr">
-            <p  class="read-bnnr-h2">Cap - acrônimo de Consultora Acadêmica de Projetos - é uma organização multidisciplinar que preza pela funcionalidade dos ambientes, sendo de residencias, estabelecimentos comerciais ou edificios.<br><br><br>Tem como missão proporcionar qualidade de vida e realização pessoal através de soluções espaciais criativas e inovadoras.</p>
-          </div>
-
-
-          <div class="read-bnnr-1">
-            <p  class="read-bnnr-h2">A estrutura organizacional da empresa é baseada em um compromisso coletivo, seguindo três etapas:<br>
-                <br><br>
-                • Diagnostico - Marcamos uma reunião para entender o seu empreendimento.;<br>
-                • Proposta - Formalizamos uma proposta personalizada para a sua ideia;<br>
-                • Solução - Uma equipe de consultores é alocada para trabalhar no seu projeto.<br>
-            </p>
-          </div>
-
-
-           <div class="read-bnnr-2">
-            <p  class="read-bnnr-h2"> <br><br>ENTRAR EM CONTATO</p><br><br><p  class="read-bnnr-h2"><i class="fas fa-envelope"></i>  cap.ejif@gmail.com</p><br><p  class="read-bnnr-h2"><i class="fas fa-map-marker-alt"></i>  Alameda Madrid, 545,<br>Esquina com a rua Saragoça,<br> Jardim Sevilha Gurupi – TO |<br>CEP 77410-470</p><br><p  class="read-bnnr-h2"><i class="fas fa-phone-square-alt"></i>  Telefone:<br>(63)0000-0000<br></p>
-          </div>
-
+      <div class="read-bnnr">
+        <p  class="read-bnnr-h2">Cap - acrônimo de Consultora Acadêmica de Projetos - é uma organização multidisciplinar que preza pela funcionalidade dos ambientes, sendo de residencias, estabelecimentos comerciais ou edificios.<br><br><br>Tem como missão proporcionar qualidade de vida e realização pessoal através de soluções espaciais criativas e inovadoras.</p>
+      </div>
+      <div class="read-bnnr-1">
+        <p  class="read-bnnr-h2">A estrutura organizacional da empresa é baseada em um compromisso coletivo, seguindo três etapas:<br><br><br>
+        • Diagnostico - Marcamos uma reunião para entender o seu empreendimento.;<br>
+        • Proposta - Formalizamos uma proposta personalizada para a sua ideia;<br>
+        • Solução - Uma equipe de consultores é alocada para trabalhar no seu projeto.<br>
+        </p>
+      </div>
+      <div class="read-bnnr-2">
+        <p  class="read-bnnr-h2"> <br><br>ENTRAR EM CONTATO</p><br><br><p  class="read-bnnr-h2"><i class="fas fa-envelope"></i>  cap.ejif@gmail.com</p><br><p  class="read-bnnr-h2"><i class="fas fa-map-marker-alt"></i>  Alameda Madrid, 545,<br>Esquina com a rua Saragoça,<br> Jardim Sevilha Gurupi – TO |<br>CEP 77410-470</p><br><p  class="read-bnnr-h2"><i class="fas fa-phone-square-alt"></i>  Telefone:<br>(63)0000-0000<br></p>
+      </div>
     </div>
   </div>
 </div>
-</div>
-
 <!--flow-->
 <div class="container-fluid" id="flow">
-    <div class="content">
-      <div class="float-dr">
-      <p>© Copyright 2019 CAP |</p>
-      </div>
-      <div class="float-soc" style="margin-top: 5px;">
-
+  <div class="content">
+    <div class="float-dr">
+      <p>© Copyright 2019 | cap</p>
+    </div>
+    <div class="float-soc" style="margin-top: 5px;">
       <i class="fab fa-facebook fa-lg"></i>
-
       <i class="fab fa-twitter-square fa-lg"></i>
-
       <i class="fab fa-instagram fa-lg"></i>
-
       <i class="fab fa-linkedin fa-lg"></i>
-
-      </div>
-      <div class="cap-flow">
-      </div>
-
+    </div>
+    <div class="cap-flow">
     </div>
   </div>
 </div>
 <!--end.flow-->
-<!--menu-->
-
-<!--end.menu-->
 <!--end.banner><!end.banner-->
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="src/js/vendors/jquery/jquery-3.3.1.slim.min.js"></script>
-    <script src="src/js/vendors/bootstrap/popper.min.js"></script>
-    <script src="src/js/vendors/bootstrap/bootstrap.min.js"></script>
-  </body>
+<!--JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="src/js/vendors/jquery/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript">
+  $(window).on("scroll", function(){
+    if($(window).scrollTop()){
+      $('nav').addClass('black');
+    }
+    else{
+      $('nav').removeClass('black');
+    }
+  })
+</script>
+<script src="src/js/vendors/bootstrap/popper.min.js"></script>
+<script src="src/js/vendors/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      numVisible: 10,
+      dist: -5
+    });
+  });
+</script>
+<script>
+  function loading(){
+    $('#load').css('display','none');
+  }
+</script>
+</body>
 </html>
