@@ -1,12 +1,3 @@
-#load {
-    position: fixed;
-    display: block;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
- }
 
 /*padrões*/
 body{
@@ -144,11 +135,20 @@ body{
 
 
 /*loader*/
+#load {
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
+
 .loading-box{
 	z-index: 15;
 	height: 350px;
 	width: 350px;
-	border: 2px solid white;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -218,7 +218,7 @@ body{
 	border-radius: 5px;
 }
 .paint-p{
-	background-color: #ffca3e;
+	background-color: #222213;
 	height: 0;
 	width: 130px;
 	position: absolute;
