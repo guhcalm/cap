@@ -150,20 +150,20 @@ body{
 	height: 350px;
 	width: 350px;
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%) rotate(-45deg);
 }
 .roller-p{
-	height: 55px;
+	height: 50px;
 	width: 150px;
 	border: 5px solid #0f0f09;
 	border-radius: 7px;
 	background-image: linear-gradient(
 		to bottom,
-		#6D6D41 0,
-		#6D6D41 80%,
-		#3F3F25 80%
+		#ffca3e 0,
+		#ffca3e 80%,
+		#fc8f2e 80%
 	);
 	position: absolute;
 	margin: auto;
@@ -178,7 +178,7 @@ body{
 	background-color: rgba(255, 255, 255, 0.7);
 	height: 7px;
 	width: 75px;
-	top: 8px;
+	top: 0px;
 	left: 8px;
 	border-radius: 10px;
 }
@@ -195,7 +195,7 @@ body{
 	border: 7px solid #0f0f09;
 	border-left: none;
 	right: -20px;
-	top: 20px;
+	top: 18px;
 	z-index: -1;
 	border-radius: 7px;
 }
@@ -204,7 +204,7 @@ body{
 	width: 7px;
 	background-color: #0f0f09;
 	position: absolute;
-	top: 65px;
+	top: 63px;
 	right: 63px;
 }
 .handle-p:after{
@@ -218,7 +218,7 @@ body{
 	border-radius: 5px;
 }
 .paint{
-	background-color: #6D6D41;
+	background-color: #ffca3e;
 	height: 0;
 	width: 130px;
 	position: absolute;
