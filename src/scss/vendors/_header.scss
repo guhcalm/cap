@@ -211,14 +211,14 @@ body{
 	position: absolute;
 	content: "";
 	height: 75px;
-	width: 25px;
+	width: 23px;
 	background-color: #040e15;
 	bottom: -75px;
-	right: -8px;
+	right: -7.5px;
 	border-radius: 5px;
 }
-.paint-p{
-	background-color: #222213;
+.paint{
+	background-color: #ffca3e;
 	height: 0;
 	width: 130px;
 	position: absolute;
@@ -226,10 +226,9 @@ body{
 	left: 0;
 	right: 0;
 	z-index: -1;
-	animation: paint-p 2s infinite;
+	animation: paint 2s infinite;
 }
-
-@keyframes paint-p{
+@keyframes paint{
 	40%{
 		height: 165px;
 	}
