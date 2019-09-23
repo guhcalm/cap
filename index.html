@@ -16,13 +16,24 @@
     <meta content="guhcalm" name="author">
     <link rel="shortcut icon" href="src/img/icones/favicon.png"/>
   </head>
-  <body>
-        <div class="loading-box">
+  <body onload="loading()">
+ <div id="load">
+    <div class="loading-box">
       <div class="roller-p">
           <div class="handle-p">
           </div>
       </div>
     </div>
+ </div>
+
+
+<!-- COLOQUE A DIV "loading" ACIMA DE TODO O CONTEUDO DO SITE (ABAIXO DA <body>) -->
+
+<div id="conteudo" style="display: none">
+  Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+ </div>
+
+
     <div class="container-fluid">
 <!--header-->
 <div class="container-fluid" id="face">
@@ -293,13 +304,9 @@
     });
     </script>
     <script>
-//<![CDATA[
-$(window).on('load', function () {
-    $('.loading-box .roller-p').fadeOut();
-    $('.loading-box').delay(350).fadeOut('slow'); 
-    $('body').delay(350).css({'overflow': 'visible'});
-})
-//]]>
+function loading(){
+     $('#load').css('display','none');
+}
     </script>
   </body>
 </html>
