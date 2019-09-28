@@ -1,18 +1,30 @@
 #convite{
 	background-color: #0F0F09;
-	
+	background-image: url('../img/background/faq.jpg');
+	background-position: center;
+	background-size: cover;
 	display: inline-block;
-	height: 160px;
+  	filter: brightness(5%);
+  	filter: grayscale(70%);
+  	filter: gray; 
+	height: 180px;
 	width: 100%;
+	box-shadow: 1000px 1000px 1000px rgba(0, 0, 0, 0.3) inset;
+}
+#convite:hover{
+	filter: brightness(100%);
+  	filter: grayscale(50%);
+}
+#convite:hover .contact-us{
+	color: #fff;
 }
 .read-cv{
-	padding: 33px;
-	padding-left: 0px;
-	padding-right: 0px;	
-	color: #BDBDAD; font: 12px $font_main;
+	padding: 40px 10px 20px 10px;
+	color: #f1f1f1; font: 15px Helvetica;
 }
 .contact-us{
-	border: 1px solid rgba(138,138,123, .7);
+	background-color: rgba(0,0,0,.4);
+	border: 1px solid #f1f1f1;
 	display: block;
 	position: relative;
 	transition: 0.7s;
@@ -22,13 +34,13 @@
 	@include make-xs-column-offset(3);
 	@include make-md-column(2);
 	@include make-md-column-offset(5);
-	color: rgba(138,138,123, .7); font: bold 12px $font_main;
+	color: #f1f1f1; font: bold 12px $font_main;
 	z-index: 1;
 }
 .contact-us:hover{
 	transition: 1.5s;
-	color: rgba(138,138,123, 1);
-	border: 1px solid rgba(0, 0, 0, 0.9);
+	color: #FFF;
+	border: 1px solid #ffff;
 }
 
 .contact-us::after{

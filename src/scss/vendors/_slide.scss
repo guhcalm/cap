@@ -1,5 +1,7 @@
 body{
-	background-image: url('../img/background/bg.png')
+	background-image: url('../img/background/bg.png');
+	background-position: center;
+	background-color: #f1f1f1;
 }
 .accordion {
 	max-width: 100%;
@@ -78,19 +80,18 @@ p, h2{
 	margin: 10px auto 40px auto;
 	position: relative;
 	display: flex;
-	justifly-content: space-between;
+	justify-content: space-between;
 	height: 350px;
 }
 #job .card{
 	position: relative;
 	box-sizing: border-box;
-	width: 33.33%;
+	width: 30%;
 	box-shadow: 0px 0 0px 0;
 }
 #job .card .face{	
 	height: 350px;
 	transition: .5s;
-	
 	color: #222213;
 }
 #job .card .face.face1{
@@ -204,6 +205,7 @@ p, h2{
 @media screen and (max-width: 768px) {
 	body {
 		margin: 0;
+
 	}
 	.accordion {
 	
