@@ -60,7 +60,7 @@ body{
 	position: absolute;
 	top: 43px;
 	padding: 0px 0px 0px 0px;
-	background-image: url('../img/icones/logo.fw.png');
+	background-image: url('../img/icones/logo.fw.svg');
 	background-size: 100% 100%;
 	background-position: center;
 	@include make-sm-column-offset(1);
@@ -72,7 +72,7 @@ body{
 	
 	z-index: 10;
 	position: absolute;
-	top: 60px;
+	top: 58px;
 	right: 0px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
@@ -120,7 +120,7 @@ body{
 					color: rgba(189,189,173, .7);
 					font: bold 9px $font_main;
 					&:hover{
-						background: #fff;
+						background:  #f1f1f1;
 						color: #222213;
 						
 					}
@@ -238,7 +238,7 @@ body{
 }
 
 #flow{
-	background-color: #f1f1f1;
+
 	height: 55px;
 }
 #flow .content{
@@ -256,10 +256,13 @@ body{
 	margin-top: 5px;
 	color: #222213;
 }
+#flow .content .float-soc a{
+	color: #222213;
+}
 #flow .content .cap-flow{
 	height: 55px;
 	width: 55px;
-	background-image: url('../img/icones/cap.png');
+	background-image: url('../img/icones/cap.svg');
 	background-size: 100% 100%;
 	background-position: center;
 	margin-right: 5%;

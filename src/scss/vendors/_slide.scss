@@ -1,3 +1,6 @@
+body{
+	background-image: url('../img/background/bg.png')
+}
 .accordion {
 	max-width: 100%;
 	height: 550px;
@@ -87,7 +90,7 @@ p, h2{
 #job .card .face{	
 	height: 350px;
 	transition: .5s;
-	margin: 0 5px 0 5px;
+	
 	color: #222213;
 }
 #job .card .face.face1{
