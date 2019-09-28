@@ -5,7 +5,7 @@
 	background-size: cover;
 	display: inline-block;
   	filter: brightness(5%);
-  	filter: grayscale(70%);
+  	filter: grayscale(75%);
   	filter: gray; 
 	height: 180px;
 	width: 100%;
@@ -13,18 +13,18 @@
 }
 #convite:hover{
 	filter: brightness(100%);
-  	filter: grayscale(50%);
-}
-#convite:hover .contact-us{
-	color: #fff;
+  	filter: grayscale(45%);
 }
 .read-cv{
 	padding: 40px 10px 20px 10px;
-	color: #f1f1f1; font: 15px Helvetica;
+	color: #CECEBF; font: 15px Helvetica;
 }
+#convite:hover .contact-us, #convite:hover .read-cv{
+	color: #fff;
+}
+
 .contact-us{
-	background-color: rgba(0,0,0,.4);
-	border: 1px solid #f1f1f1;
+	border: 1px solid #CECEBF;
 	display: block;
 	position: relative;
 	transition: 0.7s;
@@ -34,7 +34,7 @@
 	@include make-xs-column-offset(3);
 	@include make-md-column(2);
 	@include make-md-column-offset(5);
-	color: #f1f1f1; font: bold 12px $font_main;
+	color: #CECEBF; font: bold 12px $font_main;
 	z-index: 1;
 }
 .contact-us:hover{

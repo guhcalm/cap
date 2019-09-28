@@ -1,8 +1,10 @@
 #instagram h3{
-	font: bold  13px $font_main;
+	background-color: #f1f1f1;
+	font: bold  12px $font_main;
 	display: block;
 	@include make-md-column(1);
 	color: #222213;
+	width: 100px;
 }
 #instagram .carousel{
 	height: 320px;
