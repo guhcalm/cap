@@ -4,20 +4,20 @@
 	background-position: center;
 	background-size: cover;
 	display: inline-block;
-  	filter: brightness(5%);
-  	filter: grayscale(75%);
+  	filter: brightness(100%);
+  	filter: grayscale(100%);
   	filter: gray; 
-	height: 180px;
+	height: 300px;
 	width: 100%;
 	box-shadow: 1000px 1000px 1000px rgba(0, 0, 0, 0.3) inset;
 }
 #convite:hover{
 	filter: brightness(100%);
-  	filter: grayscale(45%);
+  	filter: grayscale(0%);
 }
 .read-cv{
-	padding: 40px 10px 20px 10px;
-	color: #CECEBF; font: 15px Helvetica;
+	padding: 90px 10px  40px 10px;
+	color: #ffff; font: 20px Helvetica;
 }
 #convite:hover .contact-us, #convite:hover .read-cv{
 	color: #fff;
@@ -34,15 +34,18 @@
 	@include make-xs-column-offset(3);
 	@include make-md-column(2);
 	@include make-md-column-offset(5);
-	color: #CECEBF; font: bold 12px $font_main;
+	color: #fff; font: 20px $font_main;
 	z-index: 1;
 }
 .contact-us:hover{
 	transition: 1.5s;
-	color: #FFF;
-	border: 1px solid #ffff;
+	color: rgba(255,255,255,.1);
+	
 }
-
+.contact-us:hover{
+	transition: 0.5s;
+	border: 0px solid #ffff;
+}
 .contact-us::after{
 	content: "";
 	position: absolute;

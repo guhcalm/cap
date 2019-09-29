@@ -1,11 +1,9 @@
 body{
-	background-image: url('../img/background/bg.png');
-	background-position: center;
 	background-color: #f1f1f1;
 }
 .accordion {
 	max-width: 100%;
-	height: 550px;
+	height: 600px;
 	margin: 15px 0 0 0;
 	Padding: 0 0 0 0;
 	display: flex;
@@ -16,16 +14,16 @@ body{
 
 .box {
 	position: relative;
-	height: 500px;
+	height: 550px;
 	flex: 1;
 	background-position: left;
 	background-size: cover;
 	transition: .6s;
-	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+	box-shadow: none;
 }
 .box:hover {
 	flex: 7;
-	height: 550px;
+	height: 600px;
 }
 .a1 {
 	background-image: url('../img/slider/1.fw.png')
@@ -74,25 +72,43 @@ p, h2{
 	font-family: sans-serif;
 }
 
+.atv1{
+	background-color: black;
+	color: #fff;
+	padding: 15px;
+	font: 15px Helvetica;
+}
 
+.atv2{
+	background-color: black;
+	color: #fff;
+	padding: 15px;
+	font: 15px Helvetica;
+}
+.atv3{
+	background-color: black;
+	color: #fff;
+	padding: 15px;
+	font: 15px Helvetica;
+}
 #job{
-	padding: 0 5px 0 5px;
-	margin: 10px auto 40px auto;
+	margin: 10px auto 0 auto;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	height: 350px;
+	height: 500px;
 }
 #job .card{
 	position: relative;
 	box-sizing: border-box;
-	width: 30%;
+	width: 33.33%;
 	box-shadow: 0px 0 0px 0;
+	overflow: hidden;
 }
 #job .card .face{	
-	height: 350px;
+	height: 500px;
 	transition: .5s;
-	color: #222213;
+	color: #0F0F09;
 }
 #job .card .face.face1{
 	overflow: hidden;
@@ -103,14 +119,15 @@ p, h2{
 	z-index: 1;
 }
 #job .card:hover .face.face1{
-	transform: translateY(0);
+	transform: translateY(-0px);
 }
 #job .card .face.face1 .content{
-	opacity: .9;
+	opacity: .85;
 	transition: 0.5s;
 }
 #job .card:hover .face.face1 .content{
 	opacity: 1;
+	transform: translateY(-160px);
 }
 #job .card .face.face1 .content img{
 	max-width: 100px;
@@ -133,6 +150,7 @@ p, h2{
 	height:350px;
 	transition: .8s;
 	opacity: .9;
+	position: absolute;
 
 	 
 }
@@ -210,16 +228,15 @@ p, h2{
 	.accordion {
 	
 	box-shadow: none;
-	height: 600px;
+	
 	}
 	.box {
 		box-shadow: none;
-		height: 550px;
+		
 	}
 	.box:hover {
 		flex: 7;
-		height: 600px;
-		transition: .5s;
+
 	}
 	.cap {
 		position: absolute;
@@ -229,9 +246,6 @@ p, h2{
 		height: 38px;
 		width: 61.56px;
 		
-	}
-	#job{
-	margin: 15px 0 15px 0;
 	}
 			
 }
