@@ -20,8 +20,9 @@ body{
 	background-size: cover;
 	transition: .6s;
 	box-shadow: none;
+	overflow: hidden;
 }
-.box:hover {
+.box:hover{
 	flex: 7;
 	height: 600px;
 }
@@ -122,15 +123,39 @@ p, h2{
 	transform: translateY(-0px);
 }
 #job .card .face.face1 .content{
-	opacity: .85;
+border: 3px solid #1A160D;
+	opacity: 1;
 	transition: 0.5s;
+
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	position: relative;
+
+
 }
 #job .card:hover .face.face1 .content{
-	opacity: 1;
-	transform: translateY(-160px);
+border: 2px solid #1A160D;
+	transform:translateY(-160px) rotate(360deg)  ;
+	background-color: rgba(23,109,84,.6);
+	width: 100px;
+	height: 100px;
+box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.6) inset;
 }
 #job .card .face.face1 .content img{
-	max-width: 100px;
+filter: brightness(100%);
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 1;
+}
+#job .card:hover .face.face1 .content img{
+	filter: brightness(10000%);
+	opacity: .8;
+	transition: 0s;
 }
 
 #job .card .face.face2{
