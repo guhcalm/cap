@@ -49,7 +49,7 @@ body{
 	position: absolute;
 	bottom: 0;
 	opacity: 0;
-	padding: 35px;
+	padding: 35px 35px 10px 35px;
 	flex: 7;
 }
 .box:hover .text{
@@ -122,6 +122,7 @@ p, h2{
 }
 #job .card:hover .face.face1{
 	transform: translateY(-0px);
+	height: 200px
 }
 #job .card .face.face1 .content{
 border: 3px solid #1A160D;
@@ -137,12 +138,23 @@ border: 3px solid #1A160D;
 }
 #job .card:hover .face.face1 .content{
 border: 2px solid #1A160D;
-	transform:translateY(-165px) rotate(360deg)  ;
-	background-color: rgba(23,109,84,.6);
+	transform:translateY(0px) rotate(360deg);
 	width: 100px;
 	height: 100px;
-box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.6) inset;
+	box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.6) inset;
 }
+#job .card:hover .face.face1 .content.c1{
+		background-color: rgba(235,150,181,.6);
+		box-shadow: none;
+}
+#job .card:hover .face.face1 .content.c2{
+	background-color: rgba(162,139,107,.6);
+	box-shadow: none;
+}
+#job .card:hover .face.face1 .content.c3{
+	background-color: rgba(92,52,30,.6);
+}
+	
 #job .card .face.face1 .content img{
 filter: brightness(100%);
 	width: 60%;
@@ -167,13 +179,13 @@ filter: brightness(100%);
 	align-items: center;
 	padding: 20px;
 	box-sizing: border-box;
-	transform: translateY(-350px);
+	transform: translateY(0px);
 	transition: .4s;
 	z-index: 3;
 	opacity: 0;
 }
 #job .card:hover .face.face2{
-	height:350px;
+	height:300px;
 	transition: .8s;
 	opacity: .9;
 	position: absolute;
