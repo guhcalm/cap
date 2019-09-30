@@ -5,11 +5,11 @@ body{
 	max-width: 100%;
 	height: 600px;
 	margin: 15px 0 0 0;
-	Padding: 0 0 0 0;
+	padding: 0 0 0 0;
 	display: flex;
 	flex-direction: row;
 	cursor: pointer; 
-	margin-botton: 100px;
+	margin-bottom: 100px;
 }
 
 .box {
@@ -49,13 +49,14 @@ body{
 	position: absolute;
 	bottom: 0;
 	opacity: 0;
-	padding: 10px;
-
+	padding: 35px;
+	flex: 7;
 }
 .box:hover .text{
 	opacity: 1;
 	color: #fff;
-
+	width: 100%;
+	transition-delay:.5s;
 }
 #servicos{
 	
@@ -136,7 +137,7 @@ border: 3px solid #1A160D;
 }
 #job .card:hover .face.face1 .content{
 border: 2px solid #1A160D;
-	transform:translateY(-160px) rotate(360deg)  ;
+	transform:translateY(-165px) rotate(360deg)  ;
 	background-color: rgba(23,109,84,.6);
 	width: 100px;
 	height: 100px;
@@ -167,7 +168,7 @@ filter: brightness(100%);
 	padding: 20px;
 	box-sizing: border-box;
 	transform: translateY(-350px);
-	transition: .5s;
+	transition: .4s;
 	z-index: 3;
 	opacity: 0;
 }
@@ -260,7 +261,7 @@ filter: brightness(100%);
 		
 	}
 	.box:hover {
-		flex: 7;
+		flex: 10;
 
 	}
 	.cap {
