@@ -1,5 +1,6 @@
 body{
 	background-color: #f1f1f1;
+	margin: 0;
 }
 .accordion {
 	max-width: 100%;
@@ -8,21 +9,19 @@ body{
 	padding: 0 0 0 0;
 	display: flex;
 	flex-direction: row;
-	cursor: pointer; 
-	margin-bottom: 100px;
+	cursor: pointer;
 }
-
 .box {
-	position: relative;
 	height: 550px;
 	flex: 1;
 	background-position: left;
 	background-size: cover;
 	transition: .6s;
-	box-shadow: none;
 	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
 }
-.box:hover{
+.box:hover {
 	flex: 7;
 	height: 600px;
 }
@@ -46,20 +45,18 @@ body{
 }
 .text{
 	overflow: hidden;
-	position: absolute;
-	bottom: 0;
+	visibility: hidden;
+	height: 0;
 	opacity: 0;
-	padding: 35px 35px 10px 35px;
-	flex: 7;
+	padding: 10px;
+	transition: visibility 0ms, opacity 300ms linear;
 }
 .box:hover .text{
-	opacity: 1;
 	color: #fff;
-	width: 100%;
-	transition-delay:.5s;
-}
-#servicos{
-	
+	transition-delay:660ms;
+	visibility: visible;
+	opacity: 1;
+	height: auto;
 }
 #servicos .accordion .box:hover .text p{
 	font-size: 13px;
@@ -73,14 +70,12 @@ p, h2{
 	font-weight: normal;
 	font-family: sans-serif;
 }
-
-.atv1{
+.atv1, .atv2, .atv3{
 	background-color: black;
 	color: #fff;
 	padding: 15px;
 	font: 15px Helvetica;
 }
-
 .atv2{
 	background-color: black;
 	color: #fff;
@@ -125,10 +120,9 @@ p, h2{
 	height: 200px
 }
 #job .card .face.face1 .content{
-border: 3px solid #1A160D;
+	border: 3px solid #1A160D;
 	opacity: 1;
 	transition: 0.5s;
-
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;
@@ -142,17 +136,18 @@ border: 2px solid #1A160D;
 	width: 100px;
 	height: 100px;
 	box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.6) inset;
+	transition: transform 700ms cubic-bezier(0,-0.87, 0.5, 1.8);
 }
 #job .card:hover .face.face1 .content.c1{
-		background-color: rgba(235,150,181,.6);
+		background-color: rgba(235,150,181,.95);
 		box-shadow: none;
 }
 #job .card:hover .face.face1 .content.c2{
-	background-color: rgba(162,139,107,.6);
+	background-color: rgba(90,89,45,.95);
 	box-shadow: none;
 }
 #job .card:hover .face.face1 .content.c3{
-	background-color: rgba(208,180,45,.6);
+	background-color: rgba(235,200,90,.95);
 	box-shadow: none;
 }
 	
@@ -175,7 +170,7 @@ filter: brightness(100%);
 #job .card .face.face2{
 	position: relative;
 	background: #f1f1f1;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
@@ -183,15 +178,13 @@ filter: brightness(100%);
 	transform: translateY(0px);
 	transition: .4s;
 	z-index: 3;
-	opacity: 0;
 }
 #job .card:hover .face.face2{
 	height:300px;
 	transition: .8s;
 	opacity: .9;
 	position: absolute;
-
-	 
+	display: block;
 }
 #job .card .face.face2 .content h3{
 	margin: 10px 0 0;
@@ -260,22 +253,14 @@ filter: brightness(100%);
 }
 
 @media screen and (max-width: 768px) {
-	body {
-		margin: 0;
-
-	}
-	.accordion {
-	
-	box-shadow: none;
-	
+	.text{
+		transition: visibility 0ms, opacity 300ms linear;
 	}
 	.box {
-		box-shadow: none;
-		
+		transition: .5s;
 	}
-	.box:hover {
-		flex: 10;
-
+	.box:hover .text{
+		transition-delay:560ms;
 	}
 	.cap {
 		position: absolute;
