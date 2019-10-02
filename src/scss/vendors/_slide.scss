@@ -16,7 +16,7 @@ body{
 	flex: 1;
 	background-position: left;
 	background-size: cover;
-	transition: .6s;
+	transition: .5s;
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
@@ -49,11 +49,11 @@ body{
 	height: 0;
 	opacity: 0;
 	padding: 10px;
-	transition: visibility 0ms, opacity 300ms linear;
+	transition: visibility 0ms, opacity 600ms linear;
 }
 .box:hover .text{
 	color: #fff;
-	transition-delay:660ms;
+	transition-delay:290ms;
 	visibility: visible;
 	opacity: 1;
 	height: auto;
@@ -254,13 +254,13 @@ filter: brightness(100%);
 
 @media screen and (max-width: 768px) {
 	.text{
-		transition: visibility 0ms, opacity 300ms linear;
+		transition: visibility 0ms, opacity 600ms linear;
 	}
 	.box {
-		transition: .5s;
+		transition: .35s;
 	}
 	.box:hover .text{
-		transition-delay:560ms;
+		transition-delay:300ms;
 	}
 	.cap {
 		position: absolute;
