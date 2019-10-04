@@ -65,9 +65,10 @@ body{
 #servicos .accordion .box:hover .text h2{
 	font-size: 18px;
 	text-shadow: 0px 0px 10px #000000;
+
 }
-p, h2{
-	font-weight: normal;
+#servicos .accordion .box:hover .text p, #servicos .accordion .box:hover .text h2{
+
 	font-family: sans-serif;
 }
 .atv1, .atv2, .atv3{
@@ -122,13 +123,10 @@ p, h2{
 #job .card .face.face1 .content{
 	border: 3px solid #1A160D;
 	opacity: 1;
-	transition: 0.5s;
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;
 	position: relative;
-
-
 }
 #job .card:hover .face.face1 .content{
 border: 2px solid #1A160D;
@@ -136,7 +134,7 @@ border: 2px solid #1A160D;
 	width: 100px;
 	height: 100px;
 	box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.6) inset;
-	transition: transform 700ms cubic-bezier(0,-0.87, 0.5, 1.8);
+	transition: transform 800ms cubic-bezier(0,-0.87, 0.5, 1.8);
 }
 #job .card:hover .face.face1 .content.c1{
 		background-color: rgba(235,150,181,.95);
@@ -256,20 +254,17 @@ filter: brightness(100%);
 	.text{
 		transition: visibility 0ms, opacity 600ms linear;
 	}
+	.accordion{
+		height: 650px;
+	}
 	.box {
 		transition: .35s;
+		height: 603px;
+	}
+	.box:hover {
+		height: 650px;
 	}
 	.box:hover .text{
 		transition-delay:300ms;
-	}
-	.cap {
-		position: absolute;
-		top: 40px;
-		left: 50%;
-		transform: translateX(-50%);
-		height: 38px;
-		width: 61.56px;
-		
-	}
-			
+	}		
 }

@@ -1,14 +1,14 @@
-#instagram h3{
+#instagram a h3{
 	background-color: #f1f1f1;
 	font: bold  12px $font_main;
 	display: block;
-	@include make-md-column(1);
 	color: #222213;
-	width: 100px;
+	width: 300px;
+	text-decoration: none;
 }
 #instagram .carousel{
 	height: 320px;
-	Width: 100%;
+	width: 100%;
 	position: relative;
 }
 #instagram .carousel .carousel-item{
