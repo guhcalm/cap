@@ -27,7 +27,7 @@ body{
 	height: 600px;
 }
 .a1 {
-	background-image: url('../img/slider/1.fw.png')
+	background-image: url('../img/slider/1.fw.jpg')
 }
 .a2 {
 	background-image: url('../img/slider/2.fw.jpeg')
@@ -66,13 +66,14 @@ body{
 #servicos .accordion .box:hover .text h2{
 	font-size: 18px;
 	text-shadow: 0px 0px 10px #000000;
-
 }
 #servicos .accordion .box:hover .text img{
 	position: absolute;
 	top: 0;
 	left: 6%;
-	opacity: .8;
+	opacity: .7;
+	height: auto;
+	width: 54px;
 }
 #servicos .accordion .box:hover .text p, #servicos .accordion .box:hover .text h2{
 
