@@ -17,8 +17,9 @@
     <link rel="shortcut icon" href="src/img/icones/favicon.png"/>
   </head>
 
-<body onload="loading()">
-<!--loading-->
+<body>
+<!--loading>
+  <body onload="loading()">
   <div id="load">
     <div class="loading-box">
       <div class="roller-p">
@@ -28,14 +29,19 @@
       <div class="paint"></div>
     </div>
   </div>
-<!--end.loading-->
+  <script>
+  function loading(){
+    $('#load').css('display','none');
+  }
+</script>
+<end.loading-->
 <!--header-->
 <div class="container-fluid" id="face" style="	margin: 0px;">
-  <div class="container">
+
       <div class="content">
       <div class="cap"></div> 
     </div>
-  </div>
+ 
   <!--navbar><!navbar-->
   <div class="navbar navbar-default" style="padding-left: 0px; padding-right: 0px;">
     <div class="navbar-header"> 
@@ -73,18 +79,20 @@
   	</div>
   	<div class="box a2">
   			<div class="text">
-  				<h2>ABERTO O PROCESSO SELETIVO 2019/2</h2><br>
-  				<p>Será iniciada a seleção de novos membros para a Cap...</p><br>
-          <a href="src/documents/EDITAL%20DE%20PROCESSO%20SELETIVO%20EMPRESA%20JÚNIOR.pdf">Saiba mais</a>
+  				<h2>HOMOLOGAÇÃO DAS INSCRIÇÕES - PROCESSO SELETIVO 2019/2</h2><br>
+  				<p>Relação de inscritos para a segunda etapa do processo seletivo...</p><br>
+          <a href="src/documents/Homologação%20das%20inscrições.pdf">Saiba mais</a>
   			</div>
-  	</div>
+    </div>
+    <!--slide.off>
   	<div class="box a3">
   			<div class="text">
   				<h2>FORMULÁRIO DE INSCRIÇÃO - EDITAL Nº 02</h2><br>
   				<p>Formulário de Inscrição</p><br>
           <a href="https://forms.gle/fiRdbtoXiWjVqVKe8">Saiba mais</a>
   			</div>
-  	</div>
+    </div>
+    <slide.off-->
   	<div class="box a4">
   			<div class="text">
   				<h2>IMPULSIONANDO OBJETIVOS</h2><br>
@@ -170,7 +178,7 @@
         </div>
         
         <a href="contact.html" class="read4" style="text-align: center; display:block;">
-          <div class="contact-us" style="text-align: center;">Entre em contato</div>
+          <div class="contact-us" style="text-align: center;">Entre em contato <i class="fas fa-chevron-right fa-lg"></i></div>
         </a>
         
     </div>
@@ -182,22 +190,22 @@
   
   <div class="carousel">
     <div class="carousel-item">
-      <img src="https://instagram.fudi1-1.fna.fbcdn.net/vp/397b9bd189ae9860ecc3c5cafeafbe9c/5E0B4883/t51.2885-15/e35/44296656_1031057727065690_2774479917848774887_n.jpg?_nc_ht=instagram.fudi1-1.fna.fbcdn.net&_nc_cat=102">
+      <img src="src/img/banners/ins-7.jpg">
     </div>
     <div class="carousel-item">
-      <img src="src/img/banners/conc.jpg">
+      <img src="src/img/banners/ins-6.jpg">
     </div>
     <div class="carousel-item">
-      <img src="https://instagram.fudi1-1.fna.fbcdn.net/vp/397b9bd189ae9860ecc3c5cafeafbe9c/5E0B4883/t51.2885-15/e35/44296656_1031057727065690_2774479917848774887_n.jpg?_nc_ht=instagram.fudi1-1.fna.fbcdn.net&_nc_cat=102">
+      <img src="src/img/banners/ins-5.jpg">
     </div>
     <div class="carousel-item">
-      <img src="src/img/banners/conc.jpg">
+      <img src="src/img/banners/ins-4.jpg">
     </div>
     <div class="carousel-item">
-      <img src="https://instagram.fudi1-1.fna.fbcdn.net/vp/397b9bd189ae9860ecc3c5cafeafbe9c/5E0B4883/t51.2885-15/e35/44296656_1031057727065690_2774479917848774887_n.jpg?_nc_ht=instagram.fudi1-1.fna.fbcdn.net&_nc_cat=102">
+      <img src="src/img/banners/ins-3.jpg">
     </div>
     <div class="carousel-item">
-      <img src="src/img/banners/conc.jpg">
+      <img src="src/img/banners/ins-2.jpg">
     </div>
   </div>
 </div>
@@ -259,15 +267,10 @@
 <script>
   $(document).ready(function(){
     $('.carousel').carousel({
-      numVisible: 10,
-      dist: -5
+      numVisible: 15,
+      dist: -5,
     });
   });
-</script>
-<script>
-  function loading(){
-    $('#load').css('display','none');
-  }
 </script>
 </body>
 </html>

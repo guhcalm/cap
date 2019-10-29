@@ -128,7 +128,26 @@ h3{
 	transition: .9s;
 }
 /*end.hover*/
+@media screen and (max-width: 778px) {
+	/*horizontal grids*/
+.membro-h1, .membro-h2{
+	width: 100%;
+	height: 250px;
+}
+.membro-info-h1, .membro-face-h2{
+	right: 0%;	
+}
+/*end.horizontal-grids*/
 
+/*vertical grids*/
+.membro-v1{
+	@include make-xs-column(4);
+	@include make-sm-column(4);
+	@include make-md-column(2);
+	height: 500px;
+}
+/*end.vertical-grids*/
+}
 @media screen and (max-width: 320px) {
 	#history-cap{
 		height: 500px;

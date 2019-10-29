@@ -50,33 +50,27 @@ body{
 	height: 100px;
 
 }
-#face .container .content{
-	position: relative;
-	
-}
+
 .cap{
 	height: 34.35px;
-	width: 55px;
+	width: 55.5px;
 	position: absolute;
-	top: 43px;
+	top: 45px;
 	padding: 0px 0px 0px 0px;
 	background-image: url('../img/icones/logo.fw.svg');
 	background-size: 100% 100%;
 	background-position: center;
-	@include make-sm-column-offset(1);
-	@include make-md-column-offset(1.2);
-	opacity: .7;
+	left: 10%;
+	opacity: .6;
 }
 .navbar.navbar-default{
+	position: absolute;
 	z-index: 100;
 	top: 60px;
-	@include make-sm-column(7);
-	@include make-sm-column-offset(6);
-	@include make-md-column(5);
-	@include make-md-column-offset(7.45);
+	right: 9%;
 	border-radius: 0;
 	border: none;
-	max-width: 400px;
+	max-width: 335px;
 	background-color: transparent;
 	.navbar-header .navbar-collapse{	
 		ul.navbar-nav{
@@ -85,10 +79,11 @@ body{
 			li{
 				a{
 					height: 40px;
-					color: rgba(189,189,173, .7);
-					font: bold 9px $font_main;
+					color: rgba(189,189,173, .6);
+					font: bold 9px sans-serif;
 					&:hover{
 						transition: 0.3s;
+						color: rgba(189,189,173, .8);
 						border-bottom:3px solid #f1f1f1;
 					}
 				}
@@ -232,7 +227,7 @@ body{
 	margin-right: 5%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.cap {
 		position: absolute;
 		top: 38px;
@@ -242,35 +237,39 @@ body{
 		width: 61.56px;	
 	}
 	.navbar.navbar-default{
+		position: relative;
 		max-width: 100%;
+		right: 0%;
 		.navbar-header .navbar-toggle{
 			position: relative;
 			transform: translateY(-2px);
 			border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;
-			margin-right: 8%;
+			margin-right: 2%;
 		}
 		.navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:active{
 			opacity: 0;
 		}
 		.navbar-header .navbar-toggle span.icon-bar{
-			background-color: rgba(203, 203, 191, 0.1);
+			background-color: rgba(203, 203, 191, 1);
+			opacity: .1;
 		}
 		.navbar-header .navbar-collapse{
 			transform: translateY(40px);
-			background-color: rgba($color: #222213, $alpha: .2	);
+			background-color: rgba($color: #0F0F09, $alpha: .4);
 			ul.navbar-nav{
 				
 				li{
-					border-top:1px solid rgba($color: #705F38, $alpha: .02);
+					border-top:.5px solid rgba($color: #705F38, $alpha: .2);
 					position: relative;
 					height: 40px;
 					width: 100%;
 					a{
+						font-size: 10px;
 						position: absolute;
 						width: 100%;
-						color: rgba(189,189,173, 1);
+						color: rgba(189,189,173, .8);
 						padding: 15.5px;
-						text-shadow: 0px 0px .3px #222213;
+						
 						&:hover{
 						border-bottom:0px solid transparent;
 						box-shadow: 100px 100px 100px rgba($color: #1A160D, $alpha: 0.3) inset;

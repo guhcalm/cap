@@ -15,25 +15,31 @@
     <meta content="guhcalm" name="author">
     <link rel="shortcut icon" href="src/img/icones/favicon.png"/>
   </head>
-<body onload="loading()">
-<!--loading-->
-  <div id="load">
-    <div class="loading-box">
-      <div class="roller-p">
-        <div class="handle-p">
+  <body>
+    <!--loading>
+      <body onload="loading()">
+      <div id="load">
+        <div class="loading-box">
+          <div class="roller-p">
+            <div class="handle-p">
+            </div>
+          </div>
+          <div class="paint"></div>
         </div>
       </div>
-      <div class="paint"></div>
-    </div>
-  </div>
-<!--end.loading-->
+      <script>
+      function loading(){
+        $('#load').css('display','none');
+      }
+    </script>
+    <end.loading-->
 <!--header-->
 <div class="container-fluid" id="face" style="	margin: 0px;">
-  <div class="container">
+
     <div class="content">
       <div class="cap"></div> 
     </div>
-  </div>
+
   <!--navbar><!navbar-->
   <div class="navbar navbar-default" style="padding-left: 0px; padding-right: 0px;">
     <div class="navbar-header"> 
@@ -64,7 +70,7 @@
 <div class="contatos">
   <h1 class="read-ct-h1"><br>CONTATO</h1>
   <h2 class="read-ct-h2">GERAL</h2>
-  <a href="mailto: cap@ifto.edu.br"><h1 class="read-ct-h2">cap.ejif@gmail.com</h1></a>
+  <a href="mailto: cap.ejif@gmail.com"><h1 class="read-ct-h2">cap.ejif@gmail.com</h1></a>
   <h2 class="read-ct-h2">TELEFONE</h2>
   <h2 class="read-ct-h2">(63)0000-0000</h2>
 </div>
@@ -157,11 +163,6 @@
       dist: -5
     });
   });
-</script>
-<script>
-  function loading(){
-    $('#load').css('display','none');
-  }
 </script>
 </body>
 </html>
