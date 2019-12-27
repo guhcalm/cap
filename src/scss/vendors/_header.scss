@@ -46,7 +46,6 @@ body{
 }
 #header{
 	position: absolute;
-	position: -webkit-sticky;
 	height: 36px;
 	top: 10px;
 	z-index: 100;
@@ -246,15 +245,12 @@ body{
 	#header{
 		position: relative;
 		height: 100px;
-		min-width: 100%;
 		top: 0px;
 	}
 	.header{
 		top: 0px;
 		position: absolute;
-		height: 100px;
 		width: 100%;
-		z-index: 100;
 		background-color: rgba(34,34,19,1);
 	}
 	.cap {
