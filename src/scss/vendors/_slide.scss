@@ -291,15 +291,10 @@ filter: brightness(100%);
 	.text{
 		transition: visibility 0ms, opacity 600ms linear;
 	}
-	.accordion{
-		height: 650px;
-	}
 	.box {
 		transition: .35s;
-		height: 603px;
 	}
 	.box:hover {
-		height: 650px;
 	}
 	.box:hover .text{
 		transition-delay:300ms;
