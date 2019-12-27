@@ -243,13 +243,38 @@ body{
 }
 
 @media screen and (max-width: 767px) {
+	#header{
+		position: relative;
+		height: 100px;
+		min-width: 100%;
+		top: 0px;
+	}
+	.header{
+		top: 0px;
+		position: absolute;
+		height: 100px;
+		width: 100%;
+		z-index: 100;
+		background-color: rgba(34,34,19,1);
+	}
 	.cap {
-
+		height: 39px;
+		width: 61px;
+		position: absolute;
+		top: 37.2px;
+		padding: 0px 0px 0px 0px;
+		background-image: url('../img/icones/logo.fw.svg');
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: .7;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.navbar.navbar-default{
 		position: relative;
 		max-width: 100%;
 		right: 0%;
+		top: 60px;
 		.navbar-header .navbar-toggle{
 			position: relative;
 			transform: translateY(-2px);
