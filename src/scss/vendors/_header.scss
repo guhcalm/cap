@@ -3,7 +3,7 @@
 body{
 	padding: 0;
 	margin: 0;
-	backgrounf: linear-gradient(#fff, #fefefe, #eaeaea)
+	background: #f1f1f1;
 }
 .serif-m{
 	color: f1f1f1;
@@ -44,33 +44,47 @@ body{
 		padding: 2 2 2 2;
 	}
 }
-#face{
-	position: relative;
-	background-color: #222213;
-	height: 100px;
-
-}
-
-.cap{
-	height: 34.35px;
-	width: 55.5px;
+#header{
 	position: absolute;
-	top: 45px;
+	position: -webkit-sticky;
+	height: 36px;
+	top: 10px;
+	z-index: 100;
+	min-width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.header{
+	position: relative;
+	background-color: rgba(34,34,19,.98);
+	height: 100%;
+	width: 80%;
+	z-index: 100;
+}
+.cap{
+	height: 36px;
+	width: 36px;
+	position: relative;
 	padding: 0px 0px 0px 0px;
 	background-image: url('../img/icones/logo.fw.svg');
-	background-size: 100% 100%;
+	background-size: 27px 47px;
+	background-repeat: no-repeat;
 	background-position: center;
-	left: 10%;
-	opacity: .6;
+	left: 1.6%;
+	opacity: .8;
 }
 .navbar.navbar-default{
 	position: absolute;
 	z-index: 100;
-	top: 60px;
-	right: 9%;
+	top: 0px;
+	right: -.4%;
 	border-radius: 0;
 	border: none;
-	max-width: 335px;
+	min-width: 300px;
 	background-color: transparent;
 	.navbar-header .navbar-collapse{	
 		ul.navbar-nav{
@@ -78,13 +92,13 @@ body{
 			margin-bottom: 0px;
 			li{
 				a{
-					height: 40px;
+					max-height: 36px;
 					color: rgba(189,189,173, .6);
 					font: bold 9px sans-serif;
 					&:hover{
 						transition: 0.3s;
 						color: rgba(189,189,173, .8);
-						border-bottom:3px solid #f1f1f1;
+						border-bottom:2.4px solid #f1f1f1;
 					}
 				}
 			}
@@ -207,24 +221,25 @@ body{
 	position: relative;
 }
 #flow .content .float-dr{
-	margin-left: 5%;
+	margin-left: 2%;
 	margin-right: auto;
 }
 #flow .content .float-soc{
 	margin-right: 3%;
 	margin-top: 5px;
-	color: #222213;
+	color: #433F40;
 }
 #flow .content .float-soc a{
-	color: #222213;
+	color: #433F40;
 }
 #flow .content .cap-flow{
 	height: 55px;
 	width: 55px;
 	background-image: url('../img/icones/cap.svg');
-	background-size: 100% 100%;
+	background-size: 80% 80%;
 	background-position: center;
-	margin-right: 5%;
+	background-repeat: no-repeat;
+	margin-right: 2%;
 }
 
 @media screen and (max-width: 767px) {
