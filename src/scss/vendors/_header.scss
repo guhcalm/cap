@@ -4,6 +4,7 @@ body{
 	padding: 0;
 	margin: 0;
 	background: #f1f1f1;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 .serif-m{
 	color: f1f1f1;
@@ -93,7 +94,7 @@ body{
 				a{
 					max-height: 36px;
 					color: rgba(189,189,173, .6);
-					font: bold 9px sans-serif;
+					font: BOLD 9px sans-serif;
 					&:hover{
 						transition: 0.3s;
 						color: rgba(189,189,173, .8);
