@@ -247,23 +247,25 @@ body{
 		position: relative;
 		height: 100px;
 		top: 0px;
+		
 	}
 	.header{
 		top: 0px;
 		position: absolute;
 		width: 100%;
 		background-color: rgba(34,34,19,1);
+		margin-bottom: 10px;
 	}
 	.cap {
-		height: 39px;
-		width: 61px;
+		height: 39.2px;
+		width: 60.8px;
 		position: absolute;
-		top: 37.2px;
+		top: 37.48px;
 		padding: 0px 0px 0px 0px;
 		background-image: url('../img/icones/logo.fw.svg');
 		background-size: 100% 100%;
 		background-position: center;
-		opacity: .7;
+		opacity: .6;
 		left: 50%;
 		transform: translateX(-50%);
 	}
