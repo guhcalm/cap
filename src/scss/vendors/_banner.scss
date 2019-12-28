@@ -36,3 +36,69 @@
 }
 
 
+#flow{
+	background-color: #f1f1f1;
+	height: 55px;
+	font-family:'Poiret One';
+	background-color: #f1f1f1;
+	height: 55px;
+}
+#flow .content{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+#flow .content .float-dr{
+	margin-left: 2%;
+	margin-right: auto;
+	font-family:'Poiret One';
+}
+#flow .content .float-soc{
+	margin-right: 3%;
+	margin-top: 5px;
+	color: #433F40;
+	font-family:'Poiret One';
+}
+#flow .content .float-soc a{
+	color: #433F40;
+}
+#flow .content .cap-flow{
+	height: 55px;
+	width: 55px;
+	background-image: url('../img/icones/cap.svg');
+	background-size: 80% 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 2%;
+
+}
+#flow .content{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+#flow .content .float-dr{
+	margin-left: 2%;
+	margin-right: auto;
+	font-family:'Poiret One';
+}
+#flow .content .float-soc{
+	margin-right: 3%;
+	margin-top: 5px;
+	color: #433F40;
+	font-family:'Poiret One';
+}
+#flow .content .float-soc a{
+	color: #433F40;
+}
+#flow .content .cap-flow{
+	height: 55px;
+	width: 55px;
+	background-image: url('../img/icones/cap.svg');
+	background-size: 80% 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 2%;
+}

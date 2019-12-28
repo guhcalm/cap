@@ -1,12 +1,12 @@
 p{
-	font: 12px $font_main;
+	font: 12px 'Poiret One';
 	margin: 0;
 }
 h2{
-	font: bold 12px $font_main;
+	font: bold 12px 'Poiret One';
 }
 h3{
-	font: bold 17px $font_main;
+	font: bold 17px 'Poiret One';
 }
 .read-about, .read-about-we{
 	@include make-md-column(10);
@@ -29,7 +29,7 @@ h3{
 	border-color: #f1f1f1;
 	left: 15px;	right: 15px;
 	color: #f1f1f1;	
-	font: bold 25px $font_main;
+	font: bold 25px 'Poiret One';
 	height: 50%;
 	
 }
@@ -59,7 +59,7 @@ h3{
 }
 
 .read-about-people{
-	font: bold 20px $font_main;
+	font: bold 20px 'Poiret One';
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
