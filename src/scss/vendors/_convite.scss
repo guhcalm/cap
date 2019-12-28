@@ -16,7 +16,8 @@
 }
 .read-cv{
 	padding: 90px 10px  40px 10px;
-	color: #ffff; font: 20px Helvetica;
+	color: #ffff; 
+	font: 20px 'Poiret One';
 }
 #convite:hover .contact-us, #convite:hover .read-cv{
 	color: #fff;
@@ -35,6 +36,7 @@
 	@include make-md-column-offset(5);
 	color: #fff; font: 20px $font_main;
 	z-index: 1;
+	font-family: 'Poiret One';
 }
 .contact-us:hover{
 	transition: 1.5s;

@@ -12,12 +12,12 @@
 .read-ct-h1{
 	text-align: center;
 	color: #433F40;
-	font: bold 20px $font_main;
+	font: bold 20px 'Poiret One';
 }
 .read-ct-h2{
 	text-align: center;
 	color: #433F40;
-	font: bold 13px $font_main;
+	font: bold 13px 'Poiret One';
 }
 .contato-form{
 	
@@ -96,7 +96,7 @@
 }
 @media screen and (max-width: 600px){
 	.contact-form{
-		flex-drection: column;
+		flex-direction: column;
 	}
 	.msg textarea{
 		height: 80px;
