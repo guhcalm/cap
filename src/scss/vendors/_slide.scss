@@ -11,15 +11,15 @@ body{
 	flex-direction: row;
 	cursor: pointer;
 }
-.accordion:hover .a1{
+.accordion:hover .a3{
 	flex: 1;
 }
-.accordion:hover .box:hover.a1{
+.accordion:hover .box:hover.a3{
 	flex: 10;
 }
 .a1 {
 	background-image: url('../img/slider/1.fw.jpg');
-	flex: 10;
+	flex: 1;
 }
 .a2 {
 	background-image: url('../img/slider/2.fw.jpeg');
@@ -27,7 +27,7 @@ body{
 }
 .a3 {
 	background-image: url('../img/slider/5.fw.jpeg');
-	flex: 1;
+	flex: 10;
 }
 .a4 {
 	background-image: url('../img/slider/3.fw.jpeg');
