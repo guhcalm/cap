@@ -75,7 +75,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 	left: 1.6%;
-	opacity: .8;
+	opacity: .7;
 }
 .navbar.navbar-default{
 	position: absolute;
@@ -94,7 +94,7 @@ body{
 				a{
 					max-height: 36px;
 					color: rgba(189,189,173, .6);
-					font:  9px 'Poiret One';
+					font:  10px 'Poiret One';
 					&:hover{
 						transition: 0.3s;
 						color: rgba(189,189,173, .8);
