@@ -232,13 +232,17 @@ body{
 }
 
 
+@media screen and (max-width: 768px) {
+	.header{
+		width: 85%;
 
+	}
+}
 @media screen and (max-width: 767px) {
 	#header{
 		position: relative;
 		height: 100px;
-		top: 0px;
-		
+		top: 0px;	
 	}
 	#headerabout{
 		position: relative;
