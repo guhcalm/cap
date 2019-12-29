@@ -58,13 +58,34 @@ body{
 	-webkit-justify-content: center;
 	justify-content: center;
 }
+
+#headerabout{
+	position: relative;
+	height: 200px;
+	padding-top: 10px;
+	z-index: 100;
+	min-width: 100%;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+#headerblank{
+	height: 30px;
+	min-width: 100%;
+	background-color: #ffffff;
+}
+
 .header{
+	top: 0px;
 	position: relative;
 	background-color: rgba(34,34,19,.95);
-	height: 100%;
+	height: 36px;
 	width: 80%;
 	z-index: 100;
 }
+
 .cap{
 	height: 36px;
 	width: 36px;
@@ -219,12 +240,21 @@ body{
 		top: 0px;
 		
 	}
+	#headerabout{
+		position: relative;
+		top: 0px;	
+		height: 100px;
+	}
+	#headerblank{
+		height: 15px;
+	}
 	.header{
 		top: 0px;
 		position: absolute;
 		width: 100%;
 		background-color: rgba(34,34,19,1);
-		margin-bottom: 10px;
+		margin-bottom: 15px;
+		height: 100px;
 	}
 	.cap {
 		height: 39.2px;
