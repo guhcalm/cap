@@ -301,6 +301,7 @@ body{
 					position: relative;
 					height: 40px;
 					width: 100%;
+					
 					a{
 						font-size: 10px;
 						position: absolute;
@@ -310,6 +311,7 @@ body{
 						
 						&:hover{
 						border-bottom:0px solid transparent;
+						
 						box-shadow: 100px 100px 100px rgba($color: #1A160D, $alpha: 0.3) inset;
 						}
 					}
