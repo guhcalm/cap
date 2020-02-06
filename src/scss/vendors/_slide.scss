@@ -118,7 +118,7 @@ body{
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	height: 450px;
+	height: 500px;
 	max-width: 100%;
 	background-color: #f1f1f1;
 }
@@ -131,7 +131,7 @@ body{
 	margin: 0px auto 0 auto;
 }
 #job .card .face{	
-	height: 450px;
+	height: 500px;
 	transition: .5s;
 	color: #0F0F09;
 	background-color: #f1f1f1;
@@ -157,6 +157,9 @@ body{
 	height: 140px;
 	border-radius: 50%;
 	position: relative;
+}
+#job .card .face.face1 .content.c1 img, #job .card .face.face1 .content.c2 img, #job .card .face.face1 .content.c3 img{
+	opacity: 0;
 }
 #job .card:hover .face.face1 .content{
 border: 2px solid #1A160D;
