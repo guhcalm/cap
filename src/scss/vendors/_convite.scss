@@ -1,6 +1,6 @@
 #convite{
 	background-color: #0F0F09;
-	background-image: url('../img/background/faq.jpg');
+
 	background-position: center;
 	background-size: cover;
 	display: inline-block;
@@ -17,7 +17,7 @@
 .read-cv{
 	padding: 90px 10px  40px 10px;
 	color: #ffff; 
-	font: 25px 'Poiret One';
+	font: 20px 'Poiret One';
 	font-weight: 1000;
 }
 #convite:hover .contact-us, #convite:hover .read-cv{
@@ -39,6 +39,7 @@
 	z-index: 1;
 	font-family: 'Poiret One';
 	font-weight: 600;
+
 }
 .contact-us:hover{
 	transition: 1.5s;
