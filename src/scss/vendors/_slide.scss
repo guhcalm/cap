@@ -74,14 +74,18 @@ body{
 }
 
 #servicos .accordion .box:hover .text p{
-	font-size: 13px;
+	font-size: 20px;
 	text-shadow: 0px 0px 10px #000000;
 	font-family: 'Poiret One';
+	font-weight: 200;
+	opacity: .8;
 }
 #servicos .accordion .box:hover .text h2{
-	font-size: 18px;
+	font-size: 25px;
 	text-shadow: 0px 0px 10px #000000;
 	font-family: 'Poiret One';
+	font-weight: 3000;
+	opacity: .8;
 }
 #servicos .accordion .box:hover .text img{
 	position: absolute;
@@ -92,7 +96,6 @@ body{
 	width: 45px;
 }
 #servicos .accordion .box:hover .text p, #servicos .accordion .box:hover .text h2{
-
 	font-family: 'Poiret One';
 }
 .atv1, .atv2, .atv3{
@@ -230,8 +233,8 @@ filter: brightness(100%);
 	color: #000;
 	text-align: justify;
 	font-family: 'Poiret One';
-	font-size: 18px;
-	font-weight: 300;
+	font-size: 20px;
+	font-weight: 600;
 }
 #job .card .face.face2 .content p{
 	margin: 0;
@@ -239,6 +242,7 @@ filter: brightness(100%);
 	text-align: justify;
 	font-family: 'Poiret One';
 	max-width: 100%;
+	font-size: 20px;
 }
 #job .card .face.face2 .content a{
 	margin-left: 20px;
