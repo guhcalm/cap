@@ -2,13 +2,12 @@
 	background-color: #fff;
 	background-image: url('../img/background/bg.png');
 	display: inline-block;
-
 	height: 310px;
 	width: 100%;
 }
 
 .read-cv{
-	padding: 90px 10px  40px 10px;
+	padding: 85px 10px  40px 10px;
 	color: #1C1A1B; 
 	opacity: .8;
 	font: 20px 'Poiret One';
@@ -62,4 +61,12 @@
 	transform-origin: left;
 }
 
-
+@media screen and (max-width: 767px) {
+.read-cv{
+	padding: 60px 10px  40px 10px;
+	color: #1C1A1B; 
+	opacity: .8;
+	font: 20px 'Poiret One';
+	font-weight: 1000;
+}
+}
