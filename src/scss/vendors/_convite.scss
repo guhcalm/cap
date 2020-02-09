@@ -9,14 +9,12 @@
 
 .read-cv{
 	padding: 90px 10px  40px 10px;
-	color: #2F2B2D; 
+	color: #1C1A1B; 
 	opacity: .8;
 	font: 20px 'Poiret One';
 	font-weight: 1000;
 }
-#convite:hover .contact-us{
-	color: #fff;
-}
+
 
 .contact-us{
 	border: 1px solid #CECEBF;
@@ -29,7 +27,7 @@
 	@include make-xs-column-offset(3);
 	@include make-md-column(2.4);
 	@include make-md-column-offset(4.8);
-	color: #40393D; font: 25px $font_main;
+	color: #2F2B2D; font: 25px $font_main;
 	z-index: 1;
 	font-family: 'Poiret One';
 	font-weight: 600;
@@ -37,7 +35,7 @@
 }
 .contact-us:hover{
 	transition: 1.5s;
-	color: rgba(255,255,255,.1);
+	color: #f1f1f1;
 	
 }
 .contact-us:hover{
