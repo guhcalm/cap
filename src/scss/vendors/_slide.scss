@@ -307,7 +307,7 @@ filter: brightness(100%);
 	}
 	.accordion{
 		margin-top: 14px;
-		height: 700px;
+		height: 600px;
 	}
 	.a3 {
 		background-image: url('../img/slider/5.fw.jpeg');
@@ -315,10 +315,10 @@ filter: brightness(100%);
 	}
 	.box {
 		transition: .35s;
-		height: 700px;
+		height: 600px;
 	}
 	.box:hover {
-		height: 700px;
+		height: 600px;
 	}
 	.box:hover .text{
 		transition-delay:300ms;
@@ -326,6 +326,13 @@ filter: brightness(100%);
 	#servicos .accordion .box:hover .text img{
 		left: 5px;
 	}
+
+	#job, #job .card .face{
+
+		height: 500px;
+
+	}
+
 	#job .card .face.face2 .content{
 		height: 300px;
 	}
