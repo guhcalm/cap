@@ -27,10 +27,12 @@
 	@include make-xs-column-offset(3);
 	@include make-md-column(2.4);
 	@include make-md-column-offset(4.8);
-	color: #2F2B2D; font: 25px $font_main;
+	color: #f1f1f1;
+	 font: 25px $font_main;
 	z-index: 1;
 	font-family: 'Poiret One';
 	font-weight: 600;
+	background: rgba(0, 0, 0, 0.9);
 
 }
 .contact-us:hover{
