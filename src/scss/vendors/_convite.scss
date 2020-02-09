@@ -1,26 +1,20 @@
 #convite{
-	background-color: #0F0F09;
-	background-image: url('../img/background/faq.jpg');
-	background-position: center;
-	background-size: cover;
+	background-color: #fff;
+	background-image: url('../img/background/bg.png');
 	display: inline-block;
-  	filter: brightness(70%) grayscale(100%);
-  	filter: gray; 
-	height: 300px;
+
+	height: 310px;
 	width: 100%;
-	box-shadow: 1000px 1000px 1000px rgba(0, 0, 0, 0.3) inset;
 }
-#convite:hover{
-	filter: brightness(100%);
-  	filter: grayscale(0%);
-}
+
 .read-cv{
 	padding: 90px 10px  40px 10px;
-	color: #ffff; 
+	color: #2F2B2D; 
+	opacity: .8;
 	font: 20px 'Poiret One';
 	font-weight: 1000;
 }
-#convite:hover .contact-us, #convite:hover .read-cv{
+#convite:hover .contact-us{
 	color: #fff;
 }
 
@@ -33,9 +27,9 @@
 	padding: 15px;
 	@include make-xs-column(6);
 	@include make-xs-column-offset(3);
-	@include make-md-column(2);
-	@include make-md-column-offset(5);
-	color: #fff; font: 20px $font_main;
+	@include make-md-column(2.4);
+	@include make-md-column-offset(4.8);
+	color: #40393D; font: 25px $font_main;
 	z-index: 1;
 	font-family: 'Poiret One';
 	font-weight: 600;
