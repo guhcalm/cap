@@ -163,6 +163,7 @@ body{
 }
 #job .card .face.face1 .content.c1 img, #job .card .face.face1 .content.c2 img, #job .card .face.face1 .content.c3 img{
 	opacity: 0;
+	
 }
 #job .card:hover .face.face1 .content{
 border: 2px solid #1A160D;
@@ -187,6 +188,7 @@ border: 2px solid #1A160D;
 	
 #job .card .face.face1 .content img{
 filter: brightness(100%);
+
 	width: 60%;
 	height: auto;
 	position: absolute;
