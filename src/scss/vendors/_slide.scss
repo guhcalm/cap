@@ -81,8 +81,9 @@ body{
 	opacity: .8;
 }
 #servicos .accordion .box:hover .text h2{
-	font-size: 25px;
-	text-shadow: 0px 0px 10px #000000;
+	font-size: 85px;
+	color: #f1f1f1;
+	text-shadow: 5px 10px 1px #000000;
 	font-family: 'Poiret One';
 	font-weight: 3000;
 	opacity: .8;
@@ -322,7 +323,24 @@ filter: brightness(100%);
 	}
 	.box:hover .text{
 		transition-delay:300ms;
-	}		
+	}
+
+	#servicos .accordion .box:hover .text p{
+		font-size: 20px;
+		text-shadow: 0px 0px 10px #000000;
+		font-family: 'Poiret One';
+		font-weight: 200;
+		opacity: .8;
+	}
+	#servicos .accordion .box:hover .text h2{
+		font-size: 25px;
+		color: #f1f1f1;
+		text-shadow: 3px 5px 1px #000000;
+		font-family: 'Poiret One';
+		font-weight: 3000;
+		opacity: .8;
+	}
+
 	#servicos .accordion .box:hover .text img{
 		left: 5px;
 	}
