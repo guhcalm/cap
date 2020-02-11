@@ -1,12 +1,15 @@
 p{
-	font: 13px 'Poiret One';
+	font: 17px 'Poiret One';
 	margin: 0;
+
 }
 h2{
 	font: bold 20px 'Poiret One';
+
 }
 h3{
 	font: bold 17px 'Poiret One';
+
 }
 .read-about, .read-about-we{
 	@include make-md-column(10);
@@ -40,7 +43,7 @@ h3{
 }
 #history-cap{
 	height: 350px;
-
+	color: #40393D;
 }
 #history-cap-people{
 	height: 1000px;
@@ -101,6 +104,7 @@ h3{
 }
 .membro-info-h1, .membro-face-h2{
 	right: 0%;	
+	
 }
 /*end.horizontal-grids*/
 
@@ -148,8 +152,13 @@ h3{
 }
 /*end.vertical-grids*/
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
 	#history-cap{
-		height: 500px;
+		height: 600px;
+	}
+}
+@media screen and (max-width: 424px) {
+	#history-cap{
+		height: 850px;
 	}
 }
