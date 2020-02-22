@@ -11,36 +11,15 @@ body{
 	flex-direction: row;
 	cursor: pointer;
 }
-.accordion:hover .a1{
-	flex: 1;
-}
-.accordion:hover .box:hover.a1{
-	flex: 15;
-}
-.a1 {
-	background-image: url('../img/slider/6.fw.jpg');
-	flex: 10;
-}
-.a2 {
-	background-image: url('../img/slider/1.fw.jpg');
-	flex: 1;
-}
-.a3 {
-	background-image: url('../img/slider/3.fw.jpeg');
-	flex: 1;
-}
-.a4 {
-	background-image: url('../img/slider/2.fw.jpeg');
-	flex: 1;
-}	
-.a5 {
-	background-image: url('../img/slider/5.fw.jpeg');
-	flex: 1;
-}
-.a6 {
-	background-image: url('../img/slider/7.fw.jpeg');
-	flex: 1;
-}
+.a1 {background-image: url('../img/slider/6.fw.jpg'); flex: 10;}
+.a2 {background-image: url('../img/slider/1.fw.jpg'); flex: 1;}
+.a3 {background-image: url('../img/slider/3.fw.jpeg'); flex: 1;}
+.a4 {background-image: url('../img/slider/2.fw.jpeg'); flex: 1;}
+.a5 {background-image: url('../img/slider/5.fw.jpeg'); flex: 1;}
+.a6 {background-image: url('../img/slider/7.fw.jpeg'); flex: 1;}
+.accordion:hover .a1{flex: 1;}
+.accordion:hover .box:hover.a1{flex: 15;}
+
 .box {
 	position: relative;
 	height: 100%;
@@ -317,7 +296,7 @@ filter: brightness(100%);
 		transition: visibility 0ms, opacity 600ms linear;
 	}
 	.accordion{
-		margin-top: 0px;
+		margin-top: 10px;
 		height: 600px;
 	}
 

@@ -1,42 +1,33 @@
-
-
 .capmenus{
-z-index: 100;
-position: absolute;
-right: 10%;
-top: 10px;
-height: 36px;
-
+	z-index: 100;
+	position: absolute;
+	right: 10%;
+	top: 10px;
+	height: 36px;
 	table{
 		position: absolute;
 		top: 0px;
 		width: 100%; text-align: left; margin-left: auto; margin-right: auto;
 		td{
-		text-align: center;
-		vertical-align: middle;
-		height: 36px;
-		&:hover{
-			transition: 0.3s;
-			border-bottom:2.4px solid #f1f1f1;
-		}	
-		a{
-			color: rgba(189,189,173, .7);
-			font:  9px 'Poiret One';
+			text-align: center;
+			vertical-align: middle;
+			height: 36px;
+			&:hover{
+				transition: 0.3s;
+				border-bottom:2.4px solid #f1f1f1;
+			}	
+			a{
+				color: rgba(189,189,173, .7);
+				font:  9px 'Poiret One';
+			}
+			&:hover a{
+				transition: 0.3s;
+				color: rgba(189,189,173, .8);
+			}
+		}
 		
-		}
-		}
-		td:hover a{
-			transition: 0.3s;
-			color: rgba(189,189,173, .8);
-		}
 	}
-}
-
-
-  
-  
-
-  
+} 
 @media screen and (min-width: 1024px) {
 	.capmenus{
 	width: 20%; 
@@ -47,21 +38,19 @@ height: 36px;
 	width: 38%; 
 	}
 }
-
-
-
 @media screen and (max-width: 767px) {
 	.capmenus{
 		width: 100%;
 		top: 0px;
 		right: 0;
 		z-index: 0;
+		table{ 
+			td{ 
+				a{
+					color: rgba(189,189,173, 1);
+					font:  9px 'Poiret One';
+				}
+			}
 		}
-	
-	#header:hover .capmenus{
-		z-index: 100;
-		background-color: rgba(15, 15, 9,.08);
-		transition: .8S;
 	}
-
 }
