@@ -48,7 +48,7 @@ body{
 #header{
 	position: absolute;
 	height: 36px;
-	
+	padding: 0;
 	z-index: 100;
 	min-width: 100%;
 	width: 100%;
@@ -57,14 +57,10 @@ body{
 #headerabout{
 	position: relative;
 	height: 200px;
-	padding-top: 10px;
+	padding-top: 0px;
 	z-index: 100;
 	min-width: 100%;
-	display: -webkit-flex;
-	display: flex;
 
-	-webkit-justify-content: center;
-	justify-content: center;
 }
 #headerblank{
 	height: 30px;
@@ -252,6 +248,11 @@ body{
 		position: relative;
 		top: 0px;	
 		height: 60px;
+		padding: 0;
+		&:hover{
+			height: 96px;
+			transition: .8S;
+				}
 	}
 	#headerblank{
 		height: 0px;
