@@ -15,7 +15,7 @@ body{
 	flex: 1;
 }
 .accordion:hover .box:hover.a1{
-	flex: 10;
+	flex: 15;
 }
 .a1 {
 	background-image: url('../img/slider/6.fw.jpg');
@@ -83,7 +83,7 @@ body{
 #servicos .accordion .box:hover .text h2{
 	font-size: 85px;
 	color: #000;
-	text-shadow: 0px 8px 1px rgba(255,255,255,.8);
+	text-shadow: 0px 8px 1px rgba(255,255,255,.7);
 	font-family: 'Poiret One';
 	font-weight: 3000;
 	opacity: .7;
@@ -305,7 +305,6 @@ filter: brightness(100%);
 @media screen and (max-width: 1024px) {
 	#servicos .accordion .box:hover .text p{
 		font-size: 20px;
-		text-shadow: 0px 0px 10px #000000;
 		font-weight: 200;
 
 	}
@@ -318,13 +317,10 @@ filter: brightness(100%);
 		transition: visibility 0ms, opacity 600ms linear;
 	}
 	.accordion{
-		margin-top: 14px;
+		margin-top: 0px;
 		height: 600px;
 	}
-	.a1 {
 
-		flex: 1;
-	}
 	.box {
 		transition: .35s;
 		height: 600px;
@@ -338,15 +334,11 @@ filter: brightness(100%);
 
 	#servicos .accordion .box:hover .text p{
 		font-size: 20px;
-		text-shadow: 0px 0px 10px #000000;
-		font-family: 'Poiret One';
-
+		text-shadow: 0px 0px 3px rgba(0,0,0,1);
 	}
 	#servicos .accordion .box:hover .text h2{
-		font-size: 25px;
-		color: #ffff;
-		text-shadow: 0px 5px 1px #000000;
-
+		font-size: 28px;
+		text-shadow: 0px 3px 1px rgba(255,255,255,.7);
 	}
 
 	#servicos .accordion .box:hover .text img{
