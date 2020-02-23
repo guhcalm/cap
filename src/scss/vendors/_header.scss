@@ -97,8 +97,9 @@ body{
 @media screen and (max-width: 767px) {
 #header, #headerabout{
 	position: relative;
-	height: 64px;
+	height: 90px;
 	&:hover{
+		height: 126;
 		transition: .8s;
 	}
 	.capbtn:hover+.header{
@@ -119,14 +120,14 @@ body{
 	left: 0;
 	transform: translateX(0);
 	position: absolute;
-	width: 100%; height: 64px;
+	width: 100%; height: 90px;
 	background-color: rgba(34,34,19,1);
 	margin-bottom: 0px;
 	border-bottom: .8px solid rgba($color: #000000, $alpha: 0.5);
 	box-shadow: inset 0 0 1.2px rgba($color: #fff, $alpha: 0.2);
 	.cap {
 		position: absolute;
-		width: 45px; height: 45px;
+		width: 50px; height: 50px;
 		padding: 0;
 		top: 50%; left: 50%;
 		transform: translate(-50%,-50%);
