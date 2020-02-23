@@ -296,10 +296,10 @@ filter: brightness(100%);
 		transition: visibility 0ms, opacity 600ms linear;
 	}
 	.accordion{
-		margin-top: 10px;
+		margin-top: 0px;
 		height: 600px;
 	}
-
+	.a1 {flex: 1;}
 	.box {
 		transition: .35s;
 		height: 600px;

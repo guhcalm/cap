@@ -28,6 +28,11 @@
 		
 	}
 } 
+.capbtn{
+	visibility: hidden;
+	opacity: 0;
+	
+}
 @media screen and (min-width: 1024px) {
 	.capmenus{
 	width: 20%; 
@@ -39,6 +44,33 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.capbtn{
+		visibility: visible;
+		opacity: 1;
+		z-index: 500;
+		position: relative;
+		background-color: #222213;
+		height: 36px;
+		width: 55px;
+		right: 1px;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		.span1{
+			position: absolute;
+			display: block;
+			left: 50%;
+			transform: translateX(-50%);
+			border-radius: 20%;
+			background-color: rgba(203, 203, 191,.1);
+			width: 22px;
+			height: 2px;
+		}
+		&:hover{
+			transition: .8s;
+			top: 68px;
+		}
+	}
 	.capmenus{
 		width: 100%;
 		top: 0px;
@@ -52,5 +84,10 @@
 				}
 			}
 		}
+	}
+	.capbtn:hover+.capmenus{
+		z-index: 600;
+		background-color: rgba(15, 15, 9,.08);
+		transition: .8S;
 	}
 }

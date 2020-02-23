@@ -71,7 +71,7 @@ body{
 .header{
 	top: 10px;
 	position: relative;
-	background-color: rgba(34,34,19,.95);
+	background-color: rgba(34,34,19,.95);	
 	height: 36px;
 	width: 80%;
 	z-index: 100;
@@ -97,17 +97,16 @@ body{
 @media screen and (max-width: 767px) {
 #header, #headerabout{
 	position: relative;
-	height: 80px;
+	height: 64px;
 	&:hover{
-		height: 96px;
 		transition: .8s;
 	}
-	&:hover .header{
+	.capbtn:hover+.header{
 		top:36px;
 		transition: .6s;
 	}
-	&:hover .capmenus{
-		z-index: 100;
+	.capbtn:hover+.capmenus{
+		z-index: 600;
 		background-color: rgba(15, 15, 9,.08);
 		transition: .8S;
 	}
@@ -117,16 +116,20 @@ body{
 }
 .header{
 	top: 0px;
-	position: relative;
-	width: 100%; height: 80px;
+	left: 0;
+	transform: translateX(0);
+	position: absolute;
+	width: 100%; height: 64px;
 	background-color: rgba(34,34,19,1);
 	margin-bottom: 0px;
+	border-bottom: .8px solid rgba($color: #000000, $alpha: 0.5);
+	box-shadow: inset 0 0 1.2px rgba($color: #fff, $alpha: 0.2);
 	.cap {
 		position: absolute;
-		width: 52px; height: 52px;
+		width: 45px; height: 45px;
 		padding: 0;
 		top: 50%; left: 50%;
-		transform: translate(-50%,-45%);
+		transform: translate(-50%,-50%);
 		
 	}
 }
