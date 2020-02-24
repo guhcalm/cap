@@ -98,7 +98,9 @@ body{
 	}
 }
 @media screen and (max-width: 767px) {
-
+#header{
+	background-color: #1D1D10;
+}
 	.header{
 		top: 0px;
 		left: 0px;
@@ -122,14 +124,14 @@ body{
 	position: relative;
 	height: 95px;
 	&:hover{
-		height: 131;
+		height: 131px;
 		transition: .6s;
 	}
-	.capbtn:hover ~ .header{
+	&:hover .header{
 		top:36px;
 		transition: .6s;
 	}
-	.capbtn:hover ~ .capmenus{
+	&:hover .capmenus{
 		display: block;
 		z-index: 600;
 		top: 0px;
