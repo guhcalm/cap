@@ -100,7 +100,7 @@ body{
 @media screen and (max-width: 767px) {
 #header, #headerabout{
 	position: relative;
-	height: 126px;
+	height: 131px;
 	&:hover{
 		height: 126;
 		transition: .8s;
@@ -130,7 +130,7 @@ body{
 	left: 0;
 	transform: translateX(0);
 	position: absolute;
-	width: 100%; height: 90px;
+	width: 100%; height: 95px;
 	background-color: rgba(34,34,19,1);
 	margin-bottom: 0px;
 

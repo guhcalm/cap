@@ -51,12 +51,11 @@
 	.pesquisa{
 		width: 36px;
 		height: 36px;
-
 		display: block;
 		position: absolute;
 		top: 0px;
 		right: 0px;
-	
+		opacity: .5;
 		background-image: url('../img/icones/pesquisa.png');
 		background-repeat: no-repeat; 
 		background-size: cover;
