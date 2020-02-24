@@ -100,7 +100,7 @@ body{
 @media screen and (max-width: 767px) {
 #header, #headerabout{
 	position: relative;
-	height: 90px;
+	height: 126px;
 	&:hover{
 		height: 126;
 		transition: .8s;
@@ -122,12 +122,11 @@ body{
 	width: 100%;
 	height: 36px;
 	background-color: #1D1D10;
-
 	position: absolute;
 	top: 0;
 }
 .header{
-	top: 0px;
+	top: 36px;
 	left: 0;
 	transform: translateX(0);
 	position: absolute;
@@ -137,7 +136,7 @@ body{
 
 	.cap {
 		position: absolute;
-		width: 50px; height: 50px;
+		width: 60px; height: 60px;
 		padding: 0;
 		top: 50%; left: 50%;
 		transform: translate(-50%,-50%);

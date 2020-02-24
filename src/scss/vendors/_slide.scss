@@ -20,7 +20,7 @@ body{
 	}	
 	#nav_slide {
 		width: 100%;
-		bottom: 25px;
+		bottom: 23px;
 		height: 11px;
 		position: absolute;
 		text-align: center;
@@ -30,7 +30,7 @@ body{
 		.dots {
 			width: 13px;
 			height: 13px;
-			margin: 10px;
+			margin: 8px;
 			position: relative;
 			border-radius: 100%;
 			display: inline-block;
@@ -45,7 +45,7 @@ body{
 				transform: translate(-50%,-50%) rotate(-45deg);
 				width: 14px; 
 				height: 14px;
-				border: 1.5px solid #fff;
+				border: 1.5px solid rgba($color: #fff, $alpha: .8);
 			}
 
 		}
@@ -70,9 +70,9 @@ body{
 		z-index: 20;
 		position: absolute;
 		bottom: 0;
-		width: 235px;
-		height: 37px;
-		background-color: #222213;
+		width: 210px;
+		height: 40px;
+		background-color: #1A160D;
 		opacity: 1;
 		.triangulo-para-cima {
 			position: absolute;
@@ -80,9 +80,9 @@ body{
 			width: 0; 
 			height: 0; 
 			top: 0;
-			border-left: 36px solid transparent;
-			border-right: 36px solid transparent;
-			border-bottom: 36px solid #222213;
+			border-left: 40px solid transparent;
+			border-right: 40px solid transparent;
+			border-bottom: 40px solid #222213;
 			
 		}
 		.esquerda{
@@ -134,12 +134,12 @@ body{
 	flex: 10;
 }
 
-#s1:checked ~ #nav_slide #dot1 .moldura-dot{background: #000;}
-#s2:checked ~ #nav_slide #dot2 .moldura-dot{background: red;}
-#s3:checked ~ #nav_slide #dot3 .moldura-dot{background: blue;}
-#s4:checked ~ #nav_slide #dot4 .moldura-dot{background: green;}
-#s5:checked ~ #nav_slide #dot5 .moldura-dot{background: white;}
-#s6:checked ~ #nav_slide #dot6 .moldura-dot{background: orange;}
+#s1:checked ~ #nav_slide #dot1 .moldura-dot,
+#s2:checked ~ #nav_slide #dot2 .moldura-dot,
+#s3:checked ~ #nav_slide #dot3 .moldura-dot,
+#s4:checked ~ #nav_slide #dot4 .moldura-dot,
+#s5:checked ~ #nav_slide #dot5 .moldura-dot,
+#s6:checked ~ #nav_slide #dot6 .moldura-dot{background: #fff;}
 
 
 
@@ -427,15 +427,15 @@ body{
 	}
 	.accordion{
 		margin-top: 12px;
-		height: 550px;
+		height: 570px;
 	}
 	
 	.box {
 		transition: .35s;
-		height: 550px;
+		height: 570px;
 	}
 	.box:hover {
-		height: 550px;
+		height: 570px;
 	}
 	.box:hover .text{
 		transition-delay:300ms;
