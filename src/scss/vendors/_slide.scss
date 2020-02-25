@@ -123,7 +123,7 @@ body{
 #s5:checked ~ .a1,
 #s6:checked ~ .a1{
 	flex: 1;
-	transition: visibility 0ms, opacity 600ms linear;
+	transition: 600ms;
 }
 
 .text{
