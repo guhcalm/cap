@@ -129,10 +129,13 @@ body{
 .text{
 	overflow: hidden;
 	visibility: hidden;
+	display: block;
+	position: absolute;
 	height: 0;
 	opacity: 0;
 	padding: 10px;
 	transition: visibility 0ms, opacity 600ms linear;
+	bottom: 20px;
 }
 
 #s1:checked ~ .a1,
