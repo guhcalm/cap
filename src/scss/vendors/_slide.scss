@@ -134,7 +134,7 @@ body{
 #s5:checked ~ .a1,
 #s6:checked ~ .a1{
 	flex: 1;
-	transition: 600ms;
+
 }
 
 .text{
@@ -155,11 +155,12 @@ body{
 #s4:checked ~ .a4,
 #s5:checked ~ .a5,
 #s6:checked ~ .a6{
-	transition: visibility 0ms, opacity 600ms linear;
+	transition: 2s;
+	transition: visibility 0ms, opacity 1s linear;
 	flex: 10;
 	.text{
 		color: #fff;
-		transition-delay:290ms;
+		transition-delay:460ms;
 		visibility: visible;
 		opacity: 1;
 		height: auto;
