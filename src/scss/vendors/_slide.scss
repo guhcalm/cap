@@ -19,41 +19,45 @@ body{
 		display: none;
 	}	
 	#nav_slide {
-		width: 100%;
-		bottom: 22px;
-		height: 11px;
 		position: absolute;
-		text-align: center;
+		bottom: 2px;
+		height: 32px;
+		left: 50%;
+		transform: translateX(-50%);
 		z-index: 99;
 		cursor: default;
-	
+		display: flex;
+		flex-direction: row;
+		width: 180px;
+		justify-content: space-around;
+		align-items: center;
 		.dots {
-			width: 13px;
-			height: 13px;
-			margin: 8px;
+			height: 10px;
+			width: 10px;
+			background-color: red($color: #000000);
 			position: relative;
-			border-radius: 100%;
-			display: inline-block;
+			display: block;
 			transition: .4s;
 			cursor: pointer;
-		
 			.moldura-dot{
-				display: block;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				position: absolute;
 				top: 50%;
 				left: 50%;
-				transform: translate(-50%,-50%) rotate(-45deg);
-				width: 14px; 
-				height: 14px;
+				transform: translate(-50%,-50%) rotateZ(45deg);
+				width: 13px; 
+				height: 13px;
 				border: 2px solid rgba($color: #fff, $alpha: .6	);
+				.ponto-dot{
+					position: relative;
+					border-radius: 50%;
+				}
 			}
 
 		}
 
-		#dot1:hover {background: #000;}
-		#dot2:hover {background: #000;}
-		#dot3:hover {background: #000;}
-		#dot4:hover {background: #000;}
 	}
 	.moldura1{
 		z-index: 20;
@@ -62,7 +66,7 @@ body{
 		width: 100%;
 		height: 6px;
 		background-color: #1A160D;
-		opacity: .9;
+		opacity: .8;
 	}
 	.moldura2{
 		left: 50%;
@@ -70,10 +74,10 @@ body{
 		z-index: 20;
 		position: absolute;
 		bottom: 6px;
-		width: 210px;
+		width: 190px;
 		height: 32px;
 		background-color: #1A160D;
-		opacity: .9;
+		opacity: .8;
 		.triangulo-para-cima {
 			position: absolute;
 			z-index: 900;
@@ -97,6 +101,13 @@ body{
 	}
 	
 }
+
+#s1:checked ~ #nav_slide #dot1 .ponto-dot,
+#s2:checked ~ #nav_slide #dot2 .ponto-dot,
+#s3:checked ~ #nav_slide #dot3 .ponto-dot,
+#s4:checked ~ #nav_slide #dot4 .ponto-dot,
+#s5:checked ~ #nav_slide #dot5 .ponto-dot,
+#s6:checked ~ #nav_slide #dot6 .ponto-dot{background: #fff; width: 5px; height: 5px;}
 
 .box {
 	position: relative;
@@ -185,12 +196,6 @@ body{
 
 }
 
-#s1:checked ~ #nav_slide #dot1 .moldura-dot,
-#s2:checked ~ #nav_slide #dot2 .moldura-dot,
-#s3:checked ~ #nav_slide #dot3 .moldura-dot,
-#s4:checked ~ #nav_slide #dot4 .moldura-dot,
-#s5:checked ~ #nav_slide #dot5 .moldura-dot,
-#s6:checked ~ #nav_slide #dot6 .moldura-dot{background: #fff;}
 
 
 
@@ -422,8 +427,18 @@ body{
 		flex: 1;
 		transition: .8s;
 	}
+	.accordion{
+	.moldura2{
+		width: 200px;
+	.triangulo-para-cima {
+	opacity: 0;
+	}
+}
+
+		
+			}
 	
-	
+
 #s1:checked ~ .a1,
 #s2:checked ~ .a2,
 #s3:checked ~ .a3,
