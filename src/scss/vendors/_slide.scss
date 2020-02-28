@@ -157,6 +157,7 @@ body{
 #s6:checked ~ .a6{
 	transition: 2s;
 	transition: visibility 0ms, opacity 1s linear;
+	animation: scroll 1s ease-in-out;
 	flex: 10;
 	.text{
 		color: #fff;
