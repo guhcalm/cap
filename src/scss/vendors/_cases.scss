@@ -19,7 +19,30 @@ $nav_hover_color: rgba(255, 82, 82, .8);
 .sl4{
     background-image: url('../img/slider/projetos/4.jpg')
 }
-
+.sl5{
+    background-image: url('../img/slider/projetos/5.jpg')
+}
+.sl6{
+    background-image: url('../img/slider/projetos/6.jpg')
+}
+.sl7{
+    background-image: url('../img/slider/projetos/7.jpg')
+}
+.sl8{
+    background-image: url('../img/slider/projetos/8.jpg')
+}
+.sl9{
+    background-image: url('../img/slider/projetos/9.jpg')
+}
+.sl10{
+    background-image: url('../img/slider/projetos/10.jpg')
+}
+.sl11{
+    background-image: url('../img/slider/projetos/11.jpg')
+}
+.sl12{
+    background-image: url('../img/slider/projetos/12.jpg')
+}
 
 
 
@@ -133,6 +156,7 @@ $nav_hover_color: rgba(255, 82, 82, .8);
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 200px 200px 200px;
             .projeto {
+                background-color: #795548;
                 height: 100%;
                 max-width: 100%;
                 position: relative;
@@ -199,10 +223,18 @@ $nav_hover_color: rgba(255, 82, 82, .8);
     
 }
 
-#i1:checked ~ #one,
-#i2:checked ~ #two,
-#i3:checked ~ #three,
-#i4:checked ~ #four {
+#i1:checked ~ #um,
+#i2:checked ~ #dois,
+#i3:checked ~ #três,
+#i4:checked ~ #quatro, 
+#i5:checked ~ #cinco,
+#i6:checked ~ #seis,
+#i7:checked ~ #sete, 
+#i8:checked ~ #oito, 
+#i9:checked ~ #nove,
+#i10:checked ~ #dez,
+#i11:checked ~ #onze, 
+#i12:checked ~ #doze{
 	z-index: 9;
     animation: scroll .6s ease-in-out;
 }
