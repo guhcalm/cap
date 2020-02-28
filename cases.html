@@ -53,7 +53,7 @@
         <tr>
           <td><a href="index.html">HOME</a></td>
           <td><a href="about-cap.html">QUEM SOMOS?</a></td>
-          <td><a href="cases.html">PORTFÓLIO</a></td>
+          <td><a href="cases.html">TRABALHOS</a></td>
           <td><a href="contact.html">CONTATO</a></td>
         </tr>
       </tbody>
@@ -94,7 +94,7 @@
         <label class="prev" for="i2"><span></span></label>
         <label class="next" for="i4"><span></span></label>
       </div>
-      <div class="slide_img bg sl4" id="quatrp">
+      <div class="slide_img bg sl4" id="quatro">
         <label class="prev" for="i3"><span></span></label>
         <label class="next" for="i5"><span></span></label>
       </div>
@@ -217,7 +217,7 @@
 function start(){	
 var i = 1;
 function Move(){ 	
-	i = (i%12)+1;
+	i = (i%4)+1;
 	document.getElementById('i'+i).checked = true;
 }
 setInterval(Move,5000);
