@@ -130,7 +130,11 @@ body{
 			
 		}
 	}
-
+	#headerabout{
+		H2{
+			display: NONE;
+		}
+	}
 #header, #headerabout{
 	position: relative;
 	height: 95px;
