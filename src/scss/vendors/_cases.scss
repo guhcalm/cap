@@ -237,9 +237,11 @@ $font-main:'Abhaya Libre', serif;
 @media screen and (max-width: 767px) {
     
 #portfolio{
-    min-height: 1740px;
+    min-height: 1750px;
+    
     .slide {
-        height: 450px;
+        height: 460px;
+        padding-top: 10px;
         .slide_img {
             height: 410px;
             .prev, 
