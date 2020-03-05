@@ -55,6 +55,7 @@ body{
 }
 
 #headerabout{
+	background-color: #fff;
 	position: relative;
 	height: 300px;
 	padding-top: 0px;
@@ -66,8 +67,8 @@ body{
 		left: 50%;
 		transform: translateX(-50%);
         color: #000;
-        font-size: 55px;
-        font-family: 'Abhaya Libre', serif;
+        font-size: 65px;
+        font-family:  'Poiret One';
         font-weight: 3900;
 	
 	}
@@ -161,6 +162,7 @@ body{
 		}
 	}
 #header, #headerabout{
+	background-color: #1D1D10;
 	position: relative;
 	height: 95px;
 	&:hover{
