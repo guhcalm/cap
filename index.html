@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap" rel="stylesheet">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -47,7 +48,8 @@
         <tr>
           <td><a href="index.html">HOME</a></td>
           <td><a href="about-cap.html">QUEM SOMOS?</a></td>
-          <td><a href="cases.html">TRABALHOS</a></td>
+          <td><a href="cases.html">PROJETOS
+          </a></td>
           <td><a href="contact.html">CONTATO</a></td>
         </tr>
       </tbody>
@@ -296,12 +298,12 @@
   onload  = start;
 
 function start(){	
-var s = 0;
+var s = 1;
 function Move(){ 	
 	s = (s%6)+1;
 	document.getElementById('s'+s).checked = true;
 }
-setInterval(Move,8000);
+setInterval(Move,7000);
 }
 </script>
 <script>
