@@ -69,16 +69,13 @@ body{
         color: #000;
         font-size: 65px;
         font-family:  'Poiret One';
-        font-weight: 3900;
+		font-weight: 3900;
+		opacity: .7;
 	
 	}
 
 }
-#headerblank{
-	height: 30px;
-	min-width: 100%;
-	background-color: #ffffff;
-}
+
 .barra1{
 	display: none;
 	position: absolute;
@@ -110,6 +107,7 @@ body{
 		font-size: 50px;
 	}
 }
+
 }
 @media screen and (max-width: 943px) {
 	#headerabout{

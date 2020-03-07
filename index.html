@@ -48,8 +48,7 @@
         <tr>
           <td><a href="index.html">HOME</a></td>
           <td><a href="about-cap.html">QUEM SOMOS?</a></td>
-          <td><a href="cases.html">PROJETOS
-          </a></td>
+          <td><a href="cases.html">TRABALHOS</a></td>
           <td><a href="contact.html">CONTATO</a></td>
         </tr>
       </tbody>
@@ -70,42 +69,29 @@
   <input type="radio" id="s5" name="1"/>
   <input type="radio" id="s6" name="1"/>
 
-  <div class="box a1">
+  <div class="box a1 im-a1">
     <div class="text">
       <h2>CaP EJ</h2><br>
       <p>Em uma atividade coletiva, todos os associados trabalharam -desde a fundação do projeto- nas estruturas basicas da empresa, afim da atual dinamica e qualidade nos projetos e atividades gerais.</p><br>
       <a href="about-cap.html">Saiba mais</a>
     </div>
   </div>
-  <div class="box a2">
-    <div class="text">
-      <h2>PROCESSO SELETIVO 2019/2</h2><br>
-      <p>Relação de inscritos para a segunda etapa do processo seletivo...</p><br>
-      <a href="src/documents/Homologação%20das%20inscrições.pdf">Saiba mais</a>
-    </div>
-  </div>
-  <div class="box a3">
-    <div class="text">
-      <h2>EDITAL Nº 02</h2><br>
-      <p>Formulário de Inscrição</p><br>
-      <a href="https://forms.gle/fiRdbtoXiWjVqVKe8">Saiba mais</a>
-    </div>
-  </div>
-  <div class="box a4">
+  
+  <div class="box a2 im-a4">
     <div class="text">
       <h2>IMPULSIONANDO OBJETIVOS</h2><br>
       <p>Algum projeto em mente? Entre em contato e agende sua consultoria gratuita para descobrir o que a Cap pode fazer por você.</p><br>
       <a href="contact.html">Saiba mais</a>
     </div>
   </div>
-  <div class="box a5">
+  <div class="box a3 im-a5">
     <div class="text">
       <h2>EM CONSTRUÇÃO</h2><br>
       <p>Nossos serviços estão sendo refinados e sabemos que podemos fazer melhor, apenas diga-nos como.</p><br>
       <a href="contact.html">Saiba mais</a>
     </div>
   </div>
-  <div class="box a6">
+  <div class="box a4 im-a6">
     <div class="text">
       <h2>RESPONSABILIDADE SOCIOAMBIENTAL</h2><br>
       <p>Em tempos de mudanças climáticas e escassez de recursos naturais, é papel de todas as empresas atuar de forma ética e responsável, visando assim reduzir o impacto gerado em nosso planeta. As Cap preza por oferecer soluções comprometidas com o meio ambiente e com a economia sustentável. </p><br>
@@ -117,8 +103,6 @@
 		<label for="s2" class="dots" id="dot2"><div class="moldura-dot"><div class="ponto-dot"></div></div></label>
 		<label for="s3" class="dots" id="dot3"><div class="moldura-dot"><div class="ponto-dot"></div></div></label>
     <label for="s4" class="dots" id="dot4"><div class="moldura-dot"><div class="ponto-dot"></div></div></label>
-    <label for="s5" class="dots" id="dot5"><div class="moldura-dot"><div class="ponto-dot"></div></div></label>
-    <label for="s6" class="dots" id="dot6"><div class="moldura-dot"><div class="ponto-dot"></div></div></label>
   </div>
   
   <div class="moldura1"></div>
@@ -138,6 +122,8 @@
   </div>
 </div>
 <end.apresentação-->
+
+
 <!--serviços><!serviços-->
 <div class="container-fluid" id="job">
   <div class="card l1">
@@ -300,7 +286,7 @@
 function start(){	
 var s = 1;
 function Move(){ 	
-	s = (s%6)+1;
+	s = (s%4)+1;
 	document.getElementById('s'+s).checked = true;
 }
 setInterval(Move,6000);

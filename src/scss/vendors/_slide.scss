@@ -28,7 +28,7 @@ body{
 		cursor: default;
 		display: flex;
 		flex-direction: row;
-		width: 180px;
+		width: 135px;
 		justify-content: space-around;
 		align-items: center;
 		.dots {
@@ -74,7 +74,7 @@ body{
 		z-index: 20;
 		position: absolute;
 		bottom: 4px;
-		width: 180px;
+		width: 140px;
 		height: 32px;
 		background-color: #1A160D;
 		opacity: .8;
@@ -121,12 +121,21 @@ body{
 }
 
 
-.a1 {background-image: url('../img/slider/6.fw.jpg'); flex: 10;}
-.a2 {background-image: url('../img/slider/1.fw.jpg'); flex: 1;}
-.a3 {background-image: url('../img/slider/3.fw.jpeg'); flex: 1;}
-.a4 {background-image: url('../img/slider/2.fw.jpeg'); flex: 1;}
-.a5 {background-image: url('../img/slider/5.fw.jpeg'); flex: 1;}
-.a6 {background-image: url('../img/slider/7.fw.jpeg'); flex: 1;}
+.im-a1 {background-image: url('../img/slider/6.fw.jpg');}
+.im-a2 {background-image: url('../img/slider/1.fw.jpg');}
+.im-a3 {background-image: url('../img/slider/3.fw.jpeg');}
+.im-a4 {background-image: url('../img/slider/2.fw.jpeg');}
+.im-a5 {background-image: url('../img/slider/5.fw.jpeg');}
+.im-a6 {background-image: url('../img/slider/7.fw.jpeg');}
+
+.a1 {background-image: url('../img/slider/6.fw.jpg'); flex: 6;}
+
+.a2,
+.a3,
+.a4,
+.a5,
+.a6 {flex: 1;}
+
 
 #s2:checked ~ .a1,
 #s3:checked ~ .a1,
@@ -169,11 +178,13 @@ body{
 			font-size: 20px;
 			text-shadow: 0px 0px 5px #000;
 			font-weight: 200;
+			font-family: "Relative-Book-Web", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 		}
 		h2{
 			font-size: 55px;
 			text-shadow: 0px 0px 10px #000;
 			font-weight: 3000;
+			font-family: 'Poiret One';
 		}
 		img{
 			position: absolute;
@@ -185,7 +196,6 @@ body{
 		}
 		p, 
 		h2{
-			font-family: 'Poiret One';
 			opacity: .8;
 			color: #fff;
 		}
@@ -290,7 +300,7 @@ body{
 					padding: 20px 20px 15px 20px;
 					color: #40393D;
 					text-align: justify;
-					font-family: 'Poiret One';
+					font-family:  "Plantin W01 Light", "Georgia", "Times", "Times New Roman", serif;
 					font-size: 20px;
 					font-weight: 600;
 				}
@@ -427,7 +437,7 @@ body{
 	}
 	.accordion{
 	.moldura2{
-		width: 200px;
+		width: 160px;
 	.triangulo-para-cima {
 	opacity: 0;
 	}

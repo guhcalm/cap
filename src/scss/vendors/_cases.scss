@@ -36,20 +36,46 @@ $font-main:'Abhaya Libre', serif;
 
 #portfolio{
     width: 100%;
-    height: 1325px;
     background-color: #f1f1f1;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: space-around;
-    justify-content: center;
-
     .slide {
         width: 100%;
         height: 650px;
         position: relative;
         background-color: white;
         box-shadow: 0px 0px 1px black;
+        #i1:checked ~ #um,
+        #i2:checked ~ #dois,
+        #i3:checked ~ #tres,
+        #i4:checked ~ #quatro, 
+        #i5:checked ~ #cinco,
+        #i6:checked ~ #seis,
+        #i7:checked ~ #sete, 
+        #i8:checked ~ #oito, 
+        #i9:checked ~ #nove,
+        #i10:checked ~ #dez,
+        #i11:checked ~ #onze, 
+        #i12:checked ~ #doze{
+            z-index: 9;
+            animation: bg 7s infinite;
+        }
+        
+        #i1:checked ~ .um,
+        #i2:checked ~ .dois,
+        #i3:checked ~ .tres,
+        #i4:checked ~ .quatro, 
+        #i5:checked ~ .cinco,
+        #i6:checked ~ .seis,
+        #i7:checked ~ .sete, 
+        #i8:checked ~ .oito, 
+        #i9:checked ~ .nove,
+        #i10:checked ~ .dez,
+        #i11:checked ~ .onze, 
+        #i12:checked ~ .doze{
+            z-index: 9;
+            animation: scroll 2s;
+        }
+
         input {
             display: none;
         }
@@ -129,13 +155,37 @@ $font-main:'Abhaya Libre', serif;
         }        
 
     }
+    .nav{
+        width: 100%;
+		bottom: 12%;
+		height: 11px;
+		position: absolute;
+		text-align: center;
+		z-index: 99;
+		cursor: default;
+
+		.dots {
+			top: -5px;
+			width: 10px;
+			height: 10px;
+			margin: 0 3px;
+			position: relative;
+			border-radius: 100%;
+			display: inline-block;
+			background-color: rgba(0, 0, 0, 0.6);
+			transition: .4s;
+            cursor: pointer;
+        }
+    }
     .cases	{
         display: block;
-        position: absolute;
-        height: 600px;
-        margin-bottom: 40px;
+        position: relative;
+        min-height: 600px;
         width: 85%;
-        bottom: 0px;
+        margin-top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 20px;
         #nav_slide2 {
             z-index: 2;
             display: grid;
@@ -143,7 +193,8 @@ $font-main:'Abhaya Libre', serif;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 200px 200px 200px;
             .projeto {
-                background-color: #795548;
+                overflow: hidden;
+                background-color: rgba($color: #B88278, $alpha: .8); 
                 height: 100%;
                 max-width: 100%;
                 position: relative;
@@ -151,7 +202,10 @@ $font-main:'Abhaya Libre', serif;
                 h2{
                     opacity: 0;
                 }
-                &:hover{
+                &.on{
+                    display: block;
+                }
+                &.on:hover{
                     transition: 1s;
                     animation: scroll .4s ease-in-out;
                     &::after{
@@ -187,13 +241,14 @@ $font-main:'Abhaya Libre', serif;
                             position: absolute;
                             bottom: 5px;
                             right: 5px;
-                            width: 90px;
-                            height: 30px;
-                            background-color: rgba($color: #222213, $alpha: .4);
+                            width: 60px;
+                            height: 50px;
+                            background-color: rgba($color: #CCB30E, $alpha: .4);
                             &::after{
                                 content: "Saiba mais";
+                                font-family: "Relative-Book-Web", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
                                 color: #fff;
-                                font-size: 15;
+                                font-size: 15px;
                                 opacity: 0.5;
                                 top: 50%;
                                 left: 50%;
@@ -207,24 +262,72 @@ $font-main:'Abhaya Libre', serif;
             }
         }
     }
+}
+.info{
+    width: 100%;
+    position: relative;
+    padding: 20px 5% 20px 5%;
+    display: flex;
+
+    .descricao,
+    .detalhes{
+        position: relative;
+        padding:15px;
+        text-align: justify;
+        
+    }
+    .descricao{
+        height: 100%;
+        flex: 2;
+        background-color: #fff;
+        h1{
+            font-family:  "Plantin W01 Light", "Georgia", "Times", "Times New Roman", serif;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 15px 0;
+        }
+        p{
+            font-family: "Relative-Book-Web", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            margin: 20px 0px 20px 0px;
+        }
+    }
+    .detalhes{
+        
+        flex: .8;
+        background-color: #CCB30E;
+        p{
+            font-family: "Relative-Book-Web", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        h2{
+            font-family:  "Plantin W01 Light", "Georgia", "Times", "Times New Roman", serif;
+            font-size: 19px;
+            font-weight: 500;
+            margin: 0 0 15px 0;
+        }   
+    }
     
 }
 
-#i1:checked ~ #um,
-#i2:checked ~ #dois,
-#i3:checked ~ #tres,
-#i4:checked ~ #quatro, 
-#i5:checked ~ #cinco,
-#i6:checked ~ #seis,
-#i7:checked ~ #sete, 
-#i8:checked ~ #oito, 
-#i9:checked ~ #nove,
-#i10:checked ~ #dez,
-#i11:checked ~ #onze, 
-#i12:checked ~ #doze{
-    z-index: 9;
-    animation: scroll 1s ;
+
+
+
+#i1:checked ~ .nav .dots.n1,
+#i2:checked ~ .nav .dots.n2,
+#i3:checked ~ .nav .dots.n3,
+#i4:checked ~ .nav .dots.n4,
+#i5:checked ~ .nav .dots.n5,
+#i6:checked ~ .nav .dots.n6  {
+	width: 11px;
+	height: 11px;
+	background-color: rgba(0, 0, 0, 0.9);
 }
+
+
+
 
 
 
@@ -233,15 +336,19 @@ $font-main:'Abhaya Libre', serif;
 	100% { opacity: 1;}
 }
 
+@media screen and (max-width: 1024px) {
+    @keyframes bg {
+        0% {background-position: CENTER;
+            background-size: auto 160%;}
+        100% {background-position: left;background-size: auto 120%;}
+    }
+}
 
 @media screen and (max-width: 767px) {
-    
 #portfolio{
-    min-height: 1750px;
-    
     .slide {
         height: 460px;
-        padding-top: 10px;
+        padding-top: 20px;
         .slide_img {
             height: 410px;
             .prev, 
@@ -251,12 +358,7 @@ $font-main:'Abhaya Libre', serif;
         }
     }
     .cases	{
-        display: block;
-        position: absolute;
-        height: 1200px;
-        margin-bottom: 40px;
         width: 90%;
-        bottom: 0px;
         #nav_slide2 {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 200px 200px 200px 200px 200px 200px;
