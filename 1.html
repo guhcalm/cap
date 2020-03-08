@@ -63,10 +63,33 @@
   </div>
   <!--end.header-->
 <!--slide-->
+<style>
+#portfolio{
+  .slide {
+    height: 610px;
+    .slide_img {
+      height: 610px;
+    }
+  }
+}
 
+
+  
+@media screen and (max-width: 767px) {
+  #portfolio{
+    .slide {
+        height: 470px;
+        padding-top: 20px;
+        .slide_img {
+            height: 470px;
+        }
+    }
+  }
+}
+</style>
 
 <div id="portfolio">
-    <div class="slide" style="height: 610px;">
+    <div class="slide slide2">
       <input type="radio" id="i1" name="images" checked/>
       <input type="radio" id="i2" name="images"/>
       <input type="radio" id="i3" name="images"/>
