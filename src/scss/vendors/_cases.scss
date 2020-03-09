@@ -280,7 +280,7 @@ $font-main:'Abhaya Libre', serif;
     position: relative;
     padding: 20px 5% 20px 5%;
     display: flex;
-
+    
     .descricao,
     .detalhes{
         position: relative;
@@ -290,8 +290,9 @@ $font-main:'Abhaya Libre', serif;
     }
     .descricao{
         height: 100%;
-        flex: 2;
+        flex: 2.2;
         background-color: #fff;
+        margin-right: 8px;
         h1{
             font-family:  "Plantin W01 Light", "Georgia", "Times", "Times New Roman", serif;
             font-size: 20px;
@@ -307,7 +308,7 @@ $font-main:'Abhaya Libre', serif;
     }
     .detalhes{
         
-        flex: .8;
+        flex: .6;
         background-color: #CCB30E;
         p{
             font-family: "Relative-Book-Web", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
