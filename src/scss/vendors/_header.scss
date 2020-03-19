@@ -55,7 +55,7 @@ body{
 }
 
 #headerabout{
-	background-color: #fff;
+	background-color: #000;
 	position: relative;
 	height: 300px;
 	padding-top: 0px;
@@ -134,7 +134,12 @@ body{
 }
 @media screen and (max-width: 767px) {
 #header{
-	background-color: #1D1D10;
+	position: absolute;
+	background-color: transparent;
+}
+#headerabout{
+	position: relative;
+	background-color: rgba($color: #000000, $alpha: .08);
 }
 	.header{
 		top: 0px;
@@ -142,7 +147,7 @@ body{
 		transform: translateX(0);
 		position: absolute;
 		width: 100%; height: 95px;
-		background-color: rgba(34,34,19,1);
+		background-color: transparent;
 		margin-bottom: 0px;
 	
 		.cap {
@@ -151,6 +156,7 @@ body{
 			padding: 0;
 			top: 50%; left: 50%;
 			transform: translate(-50%,-50%);
+			opacity: 1;
 			
 		}
 	}
@@ -160,8 +166,8 @@ body{
 		}
 	}
 #header, #headerabout{
-	background-color: #1D1D10;
-	position: relative;
+	
+	
 	height: 95px;
 	&:hover{
 		height: 131px;
@@ -177,6 +183,9 @@ body{
 		top: 0px;
 		background-color: rgba(15, 15, 9,.08);
 		transition: .6S;
+	}
+	&:hover .capbtn{
+		opacity: 0;
 	}
 }
 #headerblank{

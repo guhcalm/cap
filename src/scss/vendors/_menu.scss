@@ -28,10 +28,6 @@
 		
 	}
 } 
-.pesquisa{
-	display: none;
-	position: absolute;
-}
 .capbtn{
 	visibility: hidden;
 	opacity: 0;
@@ -48,20 +44,7 @@
 	}
 }
 @media screen and (max-width: 767px) {
-	.pesquisa{
-		width: 36px;
-		height: 36px;
-		display: none;
-		position: absolute;
-		top: 0px;
-		right: 0px;
-		opacity: .5;
-		background-image: url('../img/icones/pesquisa.png');
-		background-repeat: no-repeat; 
-		background-size: cover;
-		background-position: center;
-		background-size: 40% 40%;
-	}
+
 	.capbtn{
 		visibility: visible;
 		opacity: 1;
@@ -70,17 +53,20 @@
 		height: 36px;
 		width: 50px;
 		right: 0px;
-		bottom: 0;
+		top: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 		cursor: pointer;
 		.span1{
-			position: absolute;
+			position: relative;
 			display: block;
-			left: 50%;
-			transform: translateX(-50%);
+			margin: 2.5px;
 			border-radius: 20%;
-			background-color:  rgba($color: #cbcbbf, $alpha: .08);
-			width: 22px;
-			height: 2px;
+			background-color:  rgba($color: #000, $alpha: .98);
+			width: 32px;
+			height: 2.4px;
 		}
 		&:hover{
 			transition: .8s;
