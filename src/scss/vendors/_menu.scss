@@ -66,9 +66,10 @@
 			display: block;
 			margin: 2.8px;
 			border-radius: 20%;
-			background-color:  rgba($color: #1A160D, $alpha: .8);
+			background-color:  rgba($color: #1A160D, $alpha: 1);
 			width: 34px;
 			height: 3px;
+			opacity: .7;
 		}
 		&:hover{
 			transition: .8s;
